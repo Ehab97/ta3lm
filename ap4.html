@@ -1,0 +1,218 @@
+<!doctype html>
+<html lang="ar">
+
+<head>
+    <!-- Required meta tags -->
+    <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/jquery-ui.min.css">
+    <link rel="stylesheet" href="css/ap4.css">
+    <link rel="shortcut icon" href="images/favicon/logo.png">
+    <title>admin panel 4</title>
+</head>
+
+<body>
+    <!-- start header -->
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <div class="container">
+                <a class="navbar-brand" href="home.html">
+                    EDU
+                </a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                    <ul class="navbar-nav  mr-auto">
+                        <li class="nav-item">
+                            <a class="nav-link" href="ap1.html"> السمتخدمين
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="ap2.html" style="color: #E53167 !important;">المواد</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="ap6.html">الكورسات الاضافيه</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link" href="profile.html" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                <div class="pic">
+                                    <img src="imgaes/child/pexels-photo-261895.jpeg" alt="child" style="border: #E53167 !important;">
+                                </div>
+                                <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                                    <a class="dropdown-item" href="#">خروج</a>
+                                </div>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <!-- End header -->
+    <sections class="lessons" id="app">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-12">
+                    <h4>ضف او عدل درس</h4>
+                </div>
+            </div>
+            <!--End title-->
+            <div class="row">
+                <div class="col-md-12">
+                    <form method="" action="">
+                        <div class="form-group">
+                            <label for="exampleFormControlInput1">اسم الدرس</label>
+                            <input type="text" class="form-control">
+                        </div>
+                        <div class="form-group">
+                            <label for="exampleFormControlInput2">رابط الفيديو</label>
+                            <input type="text" class="form-control">
+                        </div>
+                        <div class="form-group">
+                            <label>ملخص الدرس</label>
+                            <input type="file" class="form-control" id="coursename" name="courseName">
+                        </div>
+
+                    </form>
+                </div>
+            </div>
+            <!--End choose option-->
+            <div class="row mt-5 mb-5">
+                <div class="col-md-4 col-sm-12">
+                    <form action="">
+                        <p style="margin-bottom:25px;">اسئلة الدرس</p>
+                        <div class="form-group">
+                            <label class="ml-3">نوع الاسئله</label>
+                            <div class="btn-group">
+                                <button type="button" class="btn dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                          MSQ
+                                        </button>
+                                <div class="dropdown-menu">
+                                    <a class="dropdown-item" href="#" @click="msq=true;tf=false;"> MSQ</a>
+                                    <a class="dropdown-item" href="#" @click="msq=false;tf=true;">true or false</a>
+                                    <a class="dropdown-item" href="#">Something else</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label class="ml-3">عدد الاسئله</label>
+                            <input type="number" placeholder="1">
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <section class="questions">
+            <div class="container">
+                <div class="row" v-show="msq">
+                    <div class="col-md-12">
+                        <form method="" action=" ">
+                            <div class="row ">
+                                <div class="col-md-6 mb-4 ">
+                                    <div class="form-group ">
+                                        <label for="my-input " class="mb-2 ">عنون السوال</label>
+                                        <textarea id="my-input " class="form-control " rows="10 "></textarea>
+                                    </div>
+                                </div>
+                                <div class="col-md-6 mb-4 ">
+                                    <p>الاجابه</p>
+                                    <div class="form-group ">
+                                        <img src="imgaes/favicon/baseline-check-24px.png">
+                                        <input id="my-input " class="form-control " type="text ">
+                                    </div>
+                                    <div class="form-group ">
+                                        <img src="imgaes/favicon/baseline-check-24px.png ">
+                                        <input id="my-input " class="form-control " type="text ">
+                                    </div>
+                                    <div class="form-group ">
+                                        <img src="imgaes/favicon/baseline-check-24px-white.png ">
+                                        <input id="my-input " class="form-control " type="text ">
+                                    </div>
+                                    <div class="form-group ">
+                                        <img src="imgaes/favicon/baseline-check-24px-white.png ">
+                                        <input id="my-input " class="form-control " type="text ">
+                                    </div>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+                <!-- end msq questions -->
+                <div class="row " v-show="tf">
+                    <div class="col-md-12 ">
+                        <form method=" " action=" ">
+                            <div class="row ">
+                                <div class="col-md-6 mb-4 ">
+                                    <div class="form-group ">
+                                        <label for="my-input " class="mb-2 ">عنون السوال</label>
+                                        <textarea id="my-input " class="form-control " rows="10 "></textarea>
+                                    </div>
+                                </div>
+                                <div class="col-md-6 mb-4 ">
+                                    <p>الاجابه</p>
+                                    <div class="form-group ">
+                                        <img src="imgaes/favicon/baseline-check-24px.png " style=" bottom: -35px;">
+                                        <input id="my-input " class="form-control " type="text">
+                                        <span style="color:#3480E3">true</span>
+                                    </div>
+                                    <div class="form-group ">
+                                        <img src="imgaes/favicon/baseline-check-24px.png " style=" bottom: -35px;">
+                                        <input id="my-input " class="form-control " type="text">
+                                        <span style="color:#E53167">false</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+                <div class="row ">
+                    <div class="col-md-12 text-center ">
+
+                        <button type="submit" class="active">
+                                حفظ
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </sections>
+    <!-- start footer -->
+    <footer>
+        <div class="container ">
+            <div class="row ">
+                <div class="col-md-4 ">
+                    <p>All CopyRights &copy; For Fci 2019</p>
+                </div>
+                <div class="col-md-8 ">
+                    <ul class="soical-icon ">
+                        <li><a href=" "><i class="fa fa-facebook "></i></a></li>
+                        <li><a href=" "><i class="fa fa-twitter "></i></a></li>
+                        <li><a href=" "><i class="fa fa-linkedin "></i></a></li>
+                        <li><a href=" "><i class="fa fa-youtube "></i></a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- start footer -->
+    <!-- arrow -->
+    <a href="javascript:" id="return-to-top"><i class="fa fa-arrow-up icon-chevron-up" id="i"></i></a>
+    <!-- End footer -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="js/jquery-3.1.1.min.js "></script>
+    <script src="js/jquery-ui.min.js "></script>
+    <script src="js/popper.min.js "></script>
+    <script src="js/bootstrap.min.js "></script>
+    <script src="js/vue.js "></script>
+    <script src="js/main.js "></script>
+</body>
+
+</html>
+
+</html>

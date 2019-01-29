@@ -1,0 +1,1482 @@
+<!doctype html>
+<html lang="ar">
+
+<head>
+    <!-- Required meta tags -->
+    <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/jquery-ui.min.css">
+    <link rel="stylesheet" href="css/extra-courses.css">
+    <link rel="shortcut icon" href="images/favicon/logo.png">
+    <title>Extra courses</title>
+</head>
+
+<body>
+    <!-- start header -->
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <div class="container">
+                <a class="navbar-brand" href="home.html">
+                    EDU
+                </a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                    <ul class="navbar-nav  mr-auto">
+                        <li class="nav-item">
+                            <a class="nav-link" href="about-us.html">من نحن
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="contact-us.html">التواصل معانا</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="Lesson.html">الدرس</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="extra-courses.html" style="color: #E53167 !important;">الكورسات الاضافيه</a>
+                        </li>
+                        <li class="nav-item dropdown" href="profile.html" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            <!-- <a class="nav-link" href="profile.html" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> -->
+
+                            <div class="pic">
+                                <img src="imgaes/child/pexels-photo-261895.jpeg" alt="child" style="border: #E53167 !important;">
+                            </div>
+                            <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                                <a class="dropdown-item" href="profile.html">الصفحه</a>
+                                <a class="dropdown-item" href="#">خروج</a>
+                                <a class="dropdown-item" href="#">شئ اخر</a>
+                            </div>
+                            <!-- </a> -->
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <div class="intro text-center">
+            <div class="overlay">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-sm-12">
+                            <div class="content">
+                                <h2>
+                                    الكورسات الاضافيه</h2>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <!-- End header -->
+    <!--start courses section-->
+    <section class="content" id="app">
+        <!-- <div class="container"> -->
+        <!-- <div class="row"> -->
+        <!-- start navigation row -->
+        <nav id="nav">
+            <div class="container">
+                <div class="row">
+                    <div class="col-sm-12">
+                        <ul class="list-unstyled">
+                            <li @click="o=true;o2=true;o3=true;o4=true;o5=true;o6=true;o7=true;
+                                change()"
+                                :style="color" ><span>الكل</span></li>
+                            <li @click="o=false;o2=true;o3=false;o4=false;o5=false;o6=false;o7=false"><span>ويب</span></li>
+                            <li @click="o=false;o2=false;o3=true;o4=false;o5=false;o6=false;o7=false"><span>تطوير</span></li>
+                            <li @click="o=false;o2=false;o3=false;o4=true;o5=false;o6=false;o7=false"><span>تصميم</span></li>
+                            <li @click="o=false;o2=false;o3=false;o4=false;o5=true;o6=false;o7=false"><span>تعليم اله</span></li>
+                            <li @click="o=false;o2=false;o3=false;o4=false;o5=false;o6=true;o7=false"><span>برمجه</span></li>
+                            <li @click="o=false;o2=false;o3=false;o4=false;o5=false;o6=false;o7=true"><span>لغات</span></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </nav>
+        <!-- </div> -->
+        <!-- End navigation row -->
+        <!-- </div> -->
+        <div class="container" v-show="o" id="c1">
+            <div class="row">
+                <!-- start  content row -->
+                <div class="col-md-3 mb-md-4">
+                    <div class="cont">
+                        <div class="first"><img class="img-fluid" src="imgaes/favicon/4.jpg" alt=""></div>
+                        <div class="second">
+                            <div class="head">
+                                <h6>اسم المجال</h6>
+                                <p><span class="stars">
+                                    <span class="fa fa-star checked"></span>
+                                    <span class="fa fa-star checked"></span>
+                                    <span class="fa fa-star checked"></span>
+                                    <span class="fa fa-star checked"></span>
+                                    <span class="fa fa-star checked"></span>
+                                    </span>5.0
+                                </p>
+                            </div>
+                            <div class="body">
+                                <h4>اسم الكورس</h4>
+                                <p>ملخص عما يحتويه هذا لكورس ومقدمه عنه حتا تفهم محتواه</p>
+                                <a href="courses-deatils.html" class="active">اقرا اكثر</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3 mb-md-4">
+                    <div class="cont">
+                        <div class="first"><img class="img-fluid" src="imgaes/favicon/2.jpg" alt=""></div>
+                        <div class="second">
+                            <div class="head">
+                                <h6>اسم المجال</h6>
+                                <p><span class="stars">
+                                    <span class="fa fa-star checked"></span>
+                                    <span class="fa fa-star checked"></span>
+                                    <span class="fa fa-star checked"></span>
+                                    <span class="fa fa-star checked"></span>
+                                    <span class="fa fa-star checked"></span>
+                                    </span>5.0
+                                </p>
+                            </div>
+                            <div class="body">
+                                <h4>اسم الكورس</h4>
+                                <p>ملخص عما يحتويه هذا لكورس ومقدمه عنه حتا تفهم محتواه</p>
+                                <a href="courses-deatils.html" class="active">اقرا اكثر</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3 mb-md-4">
+                    <div class="cont">
+                        <div class="first"><img class="img-fluid" src="imgaes/favicon/3.jpg" alt=""></div>
+                        <div class="second">
+                            <div class="head">
+                                <h6>اسم المجال</h6>
+                                <p><span class="stars">
+                                    <span class="fa fa-star checked"></span>
+                                    <span class="fa fa-star checked"></span>
+                                    <span class="fa fa-star checked"></span>
+                                    <span class="fa fa-star checked"></span>
+                                    <span class="fa fa-star checked"></span>
+                                    </span>5.0
+                                </p>
+                            </div>
+                            <div class="body">
+                                <h4>اسم الكورس</h4>
+                                <p>ملخص عما يحتويه هذا لكورس ومقدمه عنه حتا تفهم محتواه</p>
+                                <a href="courses-deatils.html" class="active">اقرا اكثر</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3 mb-md-4">
+                    <div class="cont">
+                        <div class="first"><img class="img-fluid" src="imgaes/favicon/1.jpg" alt=""></div>
+                        <div class="second">
+                            <div class="head">
+                                <h6>اسم المجال</h6>
+                                <p><span class="stars">
+                                    <span class="fa fa-star checked"></span>
+                                    <span class="fa fa-star checked"></span>
+                                    <span class="fa fa-star checked"></span>
+                                    <span class="fa fa-star checked"></span>
+                                    <span class="fa fa-star checked"></span>
+                                    </span>5.0
+                                </p>
+                            </div>
+                            <div class="body">
+                                <h4>اسم الكورس</h4>
+                                <p>ملخص عما يحتويه هذا لكورس ومقدمه عنه حتا تفهم محتواه</p>
+                                <a href="courses-deatils.html" class="active">اقرا اكثر</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <!-- start  content row -->
+                <div class="col-md-3 mb-md-4">
+                    <div class="cont">
+                        <div class="first"><img class="img-fluid" src="imgaes/favicon/4.jpg" alt=""></div>
+                        <div class="second">
+                            <div class="head">
+                                <h6>اسم المجال</h6>
+                                <p><span class="stars">
+                                    <span class="fa fa-star checked"></span>
+                                    <span class="fa fa-star checked"></span>
+                                    <span class="fa fa-star checked"></span>
+                                    <span class="fa fa-star checked"></span>
+                                    <span class="fa fa-star checked"></span>
+                                    </span>5.0
+                                </p>
+                            </div>
+                            <div class="body">
+                                <h4>اسم الكورس</h4>
+                                <p>ملخص عما يحتويه هذا لكورس ومقدمه عنه حتا تفهم محتواه</p>
+                                <a href="courses-deatils.html" class="active">اقرا اكثر</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3 mb-md-4">
+                    <div class="cont">
+                        <div class="first"><img class="img-fluid" src="imgaes/favicon/2.jpg" alt=""></div>
+                        <div class="second">
+                            <div class="head">
+                                <h6>اسم المجال</h6>
+                                <p><span class="stars">
+                                    <span class="fa fa-star checked"></span>
+                                    <span class="fa fa-star checked"></span>
+                                    <span class="fa fa-star checked"></span>
+                                    <span class="fa fa-star checked"></span>
+                                    <span class="fa fa-star checked"></span>
+                                    </span>5.0
+                                </p>
+                            </div>
+                            <div class="body">
+                                <h4>اسم الكورس</h4>
+                                <p>ملخص عما يحتويه هذا لكورس ومقدمه عنه حتا تفهم محتواه</p>
+                                <a href="courses-deatils.html" class="active">اقرا اكثر</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3 mb-md-4">
+                    <div class="cont">
+                        <div class="first"><img class="img-fluid" src="imgaes/favicon/3.jpg" alt=""></div>
+                        <div class="second">
+                            <div class="head">
+                                <h6>اسم المجال</h6>
+                                <p><span class="stars">
+                                    <span class="fa fa-star checked"></span>
+                                    <span class="fa fa-star checked"></span>
+                                    <span class="fa fa-star checked"></span>
+                                    <span class="fa fa-star checked"></span>
+                                    <span class="fa fa-star checked"></span>
+                                    </span>5.0
+                                </p>
+                            </div>
+                            <div class="body">
+                                <h4>اسم الكورس</h4>
+                                <p>ملخص عما يحتويه هذا لكورس ومقدمه عنه حتا تفهم محتواه</p>
+                                <a href="courses-deatils.html" class="active">اقرا اكثر</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3 mb-md-4">
+                    <div class="cont">
+                        <div class="first"><img class="img-fluid" src="imgaes/favicon/1.jpg" alt=""></div>
+                        <div class="second">
+                            <div class="head">
+                                <h6>اسم المجال</h6>
+                                <p><span class="stars">
+                                    <span class="fa fa-star checked"></span>
+                                    <span class="fa fa-star checked"></span>
+                                    <span class="fa fa-star checked"></span>
+                                    <span class="fa fa-star checked"></span>
+                                    <span class="fa fa-star checked"></span>
+                                    </span>5.0
+                                </p>
+                            </div>
+                            <div class="body">
+                                <h4>اسم الكورس</h4>
+                                <p>ملخص عما يحتويه هذا لكورس ومقدمه عنه حتا تفهم محتواه</p>
+                                <a href="courses-deatils.html" class="active">اقرا اكثر</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container" v-show="o2" id="c2">
+            <div class="row">
+                <!-- start  content row -->
+                <div class="col-md-3 mb-md-4">
+                    <div class="cont">
+                        <div class="first"><img class="img-fluid" src="imgaes/favicon/4.jpg" alt=""></div>
+                        <div class="second">
+                            <div class="head">
+                                <h6>اسم المجال</h6>
+                                <p><span class="stars">
+                                    <span class="fa fa-star checked"></span>
+                                    <span class="fa fa-star checked"></span>
+                                    <span class="fa fa-star checked"></span>
+                                    <span class="fa fa-star checked"></span>
+                                    <span class="fa fa-star checked"></span>
+                                    </span>5.0
+                                </p>
+                            </div>
+                            <div class="body">
+                                <h4>اسم الكورس</h4>
+                                <p>ملخص عما يحتويه هذا لكورس ومقدمه عنه حتا تفهم محتواه</p>
+                                <a href="courses-deatils.html" class="active">اقرا اكثر</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3 mb-md-4">
+                    <div class="cont">
+                        <div class="first"><img class="img-fluid" src="imgaes/favicon/2.jpg" alt=""></div>
+                        <div class="second">
+                            <div class="head">
+                                <h6>اسم المجال</h6>
+                                <p><span class="stars">
+                                    <span class="fa fa-star checked"></span>
+                                    <span class="fa fa-star checked"></span>
+                                    <span class="fa fa-star checked"></span>
+                                    <span class="fa fa-star checked"></span>
+                                    <span class="fa fa-star checked"></span>
+                                    </span>5.0
+                                </p>
+                            </div>
+                            <div class="body">
+                                <h4>اسم الكورس</h4>
+                                <p>ملخص عما يحتويه هذا لكورس ومقدمه عنه حتا تفهم محتواه</p>
+                                <a href="courses-deatils.html" class="active">اقرا اكثر</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3 mb-md-4">
+                    <div class="cont">
+                        <div class="first"><img class="img-fluid" src="imgaes/favicon/3.jpg" alt=""></div>
+                        <div class="second">
+                            <div class="head">
+                                <h6>اسم المجال</h6>
+                                <p><span class="stars">
+                                    <span class="fa fa-star checked"></span>
+                                    <span class="fa fa-star checked"></span>
+                                    <span class="fa fa-star checked"></span>
+                                    <span class="fa fa-star checked"></span>
+                                    <span class="fa fa-star checked"></span>
+                                    </span>5.0
+                                </p>
+                            </div>
+                            <div class="body">
+                                <h4>اسم الكورس</h4>
+                                <p>ملخص عما يحتويه هذا لكورس ومقدمه عنه حتا تفهم محتواه</p>
+                                <a href="courses-deatils.html" class="active">اقرا اكثر</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3 mb-md-4">
+                    <div class="cont">
+                        <div class="first"><img class="img-fluid" src="imgaes/favicon/1.jpg" alt=""></div>
+                        <div class="second">
+                            <div class="head">
+                                <h6>اسم المجال</h6>
+                                <p><span class="stars">
+                                    <span class="fa fa-star checked"></span>
+                                    <span class="fa fa-star checked"></span>
+                                    <span class="fa fa-star checked"></span>
+                                    <span class="fa fa-star checked"></span>
+                                    <span class="fa fa-star checked"></span>
+                                    </span>5.0
+                                </p>
+                            </div>
+                            <div class="body">
+                                <h4>اسم الكورس</h4>
+                                <p>ملخص عما يحتويه هذا لكورس ومقدمه عنه حتا تفهم محتواه</p>
+                                <a href="courses-deatils.html" class="active">اقرا اكثر</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <!-- start  content row -->
+                <div class="col-md-3 mb-md-4">
+                    <div class="cont">
+                        <div class="first"><img class="img-fluid" src="imgaes/favicon/4.jpg" alt=""></div>
+                        <div class="second">
+                            <div class="head">
+                                <h6>اسم المجال</h6>
+                                <p><span class="stars">
+                                    <span class="fa fa-star checked"></span>
+                                    <span class="fa fa-star checked"></span>
+                                    <span class="fa fa-star checked"></span>
+                                    <span class="fa fa-star checked"></span>
+                                    <span class="fa fa-star checked"></span>
+                                    </span>5.0
+                                </p>
+                            </div>
+                            <div class="body">
+                                <h4>اسم الكورس</h4>
+                                <p>ملخص عما يحتويه هذا لكورس ومقدمه عنه حتا تفهم محتواه</p>
+                                <a href="courses-deatils.html" class="active">اقرا اكثر</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3 mb-md-4">
+                    <div class="cont">
+                        <div class="first"><img class="img-fluid" src="imgaes/favicon/2.jpg" alt=""></div>
+                        <div class="second">
+                            <div class="head">
+                                <h6>اسم المجال</h6>
+                                <p><span class="stars">
+                                    <span class="fa fa-star checked"></span>
+                                    <span class="fa fa-star checked"></span>
+                                    <span class="fa fa-star checked"></span>
+                                    <span class="fa fa-star checked"></span>
+                                    <span class="fa fa-star checked"></span>
+                                    </span>5.0
+                                </p>
+                            </div>
+                            <div class="body">
+                                <h4>اسم الكورس</h4>
+                                <p>ملخص عما يحتويه هذا لكورس ومقدمه عنه حتا تفهم محتواه</p>
+                                <a href="courses-deatils.html" class="active">اقرا اكثر</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3 mb-md-4">
+                    <div class="cont">
+                        <div class="first"><img class="img-fluid" src="imgaes/favicon/3.jpg" alt=""></div>
+                        <div class="second">
+                            <div class="head">
+                                <h6>اسم المجال</h6>
+                                <p><span class="stars">
+                                    <span class="fa fa-star checked"></span>
+                                    <span class="fa fa-star checked"></span>
+                                    <span class="fa fa-star checked"></span>
+                                    <span class="fa fa-star checked"></span>
+                                    <span class="fa fa-star checked"></span>
+                                    </span>5.0
+                                </p>
+                            </div>
+                            <div class="body">
+                                <h4>اسم الكورس</h4>
+                                <p>ملخص عما يحتويه هذا لكورس ومقدمه عنه حتا تفهم محتواه</p>
+                                <a href="courses-deatils.html" class="active">اقرا اكثر</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3 mb-md-4">
+                    <div class="cont">
+                        <div class="first"><img class="img-fluid" src="imgaes/favicon/1.jpg" alt=""></div>
+                        <div class="second">
+                            <div class="head">
+                                <h6>اسم المجال</h6>
+                                <p><span class="stars">
+                                    <span class="fa fa-star checked"></span>
+                                    <span class="fa fa-star checked"></span>
+                                    <span class="fa fa-star checked"></span>
+                                    <span class="fa fa-star checked"></span>
+                                    <span class="fa fa-star checked"></span>
+                                    </span>5.0
+                                </p>
+                            </div>
+                            <div class="body">
+                                <h4>اسم الكورس</h4>
+                                <p>ملخص عما يحتويه هذا لكورس ومقدمه عنه حتا تفهم محتواه</p>
+                                <a href="courses-deatils.html" class="active">اقرا اكثر</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container" v-show="o3" id="c3">
+            <div class="row">
+                <!-- start  content row -->
+                <div class="col-md-3 mb-md-4">
+                    <div class="cont">
+                        <div class="first"><img class="img-fluid" src="imgaes/favicon/4.jpg" alt=""></div>
+                        <div class="second">
+                            <div class="head">
+                                <h6>اسم المجال</h6>
+                                <p><span class="stars">
+                                    <span class="fa fa-star checked"></span>
+                                    <span class="fa fa-star checked"></span>
+                                    <span class="fa fa-star checked"></span>
+                                    <span class="fa fa-star checked"></span>
+                                    <span class="fa fa-star checked"></span>
+                                    </span>5.0
+                                </p>
+                            </div>
+                            <div class="body">
+                                <h4>اسم الكورس</h4>
+                                <p>ملخص عما يحتويه هذا لكورس ومقدمه عنه حتا تفهم محتواه</p>
+                                <a href="courses-deatils.html" class="active">اقرا اكثر</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3 mb-md-4">
+                    <div class="cont">
+                        <div class="first"><img class="img-fluid" src="imgaes/favicon/2.jpg" alt=""></div>
+                        <div class="second">
+                            <div class="head">
+                                <h6>اسم المجال</h6>
+                                <p><span class="stars">
+                                    <span class="fa fa-star checked"></span>
+                                    <span class="fa fa-star checked"></span>
+                                    <span class="fa fa-star checked"></span>
+                                    <span class="fa fa-star checked"></span>
+                                    <span class="fa fa-star checked"></span>
+                                    </span>5.0
+                                </p>
+                            </div>
+                            <div class="body">
+                                <h4>اسم الكورس</h4>
+                                <p>ملخص عما يحتويه هذا لكورس ومقدمه عنه حتا تفهم محتواه</p>
+                                <a href="courses-deatils.html" class="active">اقرا اكثر</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3 mb-md-4">
+                    <div class="cont">
+                        <div class="first"><img class="img-fluid" src="imgaes/favicon/3.jpg" alt=""></div>
+                        <div class="second">
+                            <div class="head">
+                                <h6>اسم المجال</h6>
+                                <p><span class="stars">
+                                    <span class="fa fa-star checked"></span>
+                                    <span class="fa fa-star checked"></span>
+                                    <span class="fa fa-star checked"></span>
+                                    <span class="fa fa-star checked"></span>
+                                    <span class="fa fa-star checked"></span>
+                                    </span>5.0
+                                </p>
+                            </div>
+                            <div class="body">
+                                <h4>اسم الكورس</h4>
+                                <p>ملخص عما يحتويه هذا لكورس ومقدمه عنه حتا تفهم محتواه</p>
+                                <a href="courses-deatils.html" class="active">اقرا اكثر</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3 mb-md-4">
+                    <div class="cont">
+                        <div class="first"><img class="img-fluid" src="imgaes/favicon/1.jpg" alt=""></div>
+                        <div class="second">
+                            <div class="head">
+                                <h6>اسم المجال</h6>
+                                <p><span class="stars">
+                                    <span class="fa fa-star checked"></span>
+                                    <span class="fa fa-star checked"></span>
+                                    <span class="fa fa-star checked"></span>
+                                    <span class="fa fa-star checked"></span>
+                                    <span class="fa fa-star checked"></span>
+                                    </span>5.0
+                                </p>
+                            </div>
+                            <div class="body">
+                                <h4>اسم الكورس</h4>
+                                <p>ملخص عما يحتويه هذا لكورس ومقدمه عنه حتا تفهم محتواه</p>
+                                <a href="courses-deatils.html" class="active">اقرا اكثر</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <!-- start  content row -->
+                <div class="col-md-3 mb-md-4">
+                    <div class="cont">
+                        <div class="first"><img class="img-fluid" src="imgaes/favicon/4.jpg" alt=""></div>
+                        <div class="second">
+                            <div class="head">
+                                <h6>اسم المجال</h6>
+                                <p><span class="stars">
+                                    <span class="fa fa-star checked"></span>
+                                    <span class="fa fa-star checked"></span>
+                                    <span class="fa fa-star checked"></span>
+                                    <span class="fa fa-star checked"></span>
+                                    <span class="fa fa-star checked"></span>
+                                    </span>5.0
+                                </p>
+                            </div>
+                            <div class="body">
+                                <h4>اسم الكورس</h4>
+                                <p>ملخص عما يحتويه هذا لكورس ومقدمه عنه حتا تفهم محتواه</p>
+                                <a href="courses-deatils.html" class="active">اقرا اكثر</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3 mb-md-4">
+                    <div class="cont">
+                        <div class="first"><img class="img-fluid" src="imgaes/favicon/2.jpg" alt=""></div>
+                        <div class="second">
+                            <div class="head">
+                                <h6>اسم المجال</h6>
+                                <p><span class="stars">
+                                    <span class="fa fa-star checked"></span>
+                                    <span class="fa fa-star checked"></span>
+                                    <span class="fa fa-star checked"></span>
+                                    <span class="fa fa-star checked"></span>
+                                    <span class="fa fa-star checked"></span>
+                                    </span>5.0
+                                </p>
+                            </div>
+                            <div class="body">
+                                <h4>اسم الكورس</h4>
+                                <p>ملخص عما يحتويه هذا لكورس ومقدمه عنه حتا تفهم محتواه</p>
+                                <a href="courses-deatils.html" class="active">اقرا اكثر</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3 mb-md-4">
+                    <div class="cont">
+                        <div class="first"><img class="img-fluid" src="imgaes/favicon/3.jpg" alt=""></div>
+                        <div class="second">
+                            <div class="head">
+                                <h6>اسم المجال</h6>
+                                <p><span class="stars">
+                                    <span class="fa fa-star checked"></span>
+                                    <span class="fa fa-star checked"></span>
+                                    <span class="fa fa-star checked"></span>
+                                    <span class="fa fa-star checked"></span>
+                                    <span class="fa fa-star checked"></span>
+                                    </span>5.0
+                                </p>
+                            </div>
+                            <div class="body">
+                                <h4>اسم الكورس</h4>
+                                <p>ملخص عما يحتويه هذا لكورس ومقدمه عنه حتا تفهم محتواه</p>
+                                <a href="courses-deatils.html" class="active">اقرا اكثر</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3 mb-md-4">
+                    <div class="cont">
+                        <div class="first"><img class="img-fluid" src="imgaes/favicon/1.jpg" alt=""></div>
+                        <div class="second">
+                            <div class="head">
+                                <h6>اسم المجال</h6>
+                                <p><span class="stars">
+                                    <span class="fa fa-star checked"></span>
+                                    <span class="fa fa-star checked"></span>
+                                    <span class="fa fa-star checked"></span>
+                                    <span class="fa fa-star checked"></span>
+                                    <span class="fa fa-star checked"></span>
+                                    </span>5.0
+                                </p>
+                            </div>
+                            <div class="body">
+                                <h4>اسم الكورس</h4>
+                                <p>ملخص عما يحتويه هذا لكورس ومقدمه عنه حتا تفهم محتواه</p>
+                                <a href="courses-deatils.html" class="active">اقرا اكثر</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container" v-show="o4" id="c4">
+            <div class="row">
+                <!-- start  content row -->
+                <div class="col-md-3 mb-md-4">
+                    <div class="cont">
+                        <div class="first"><img class="img-fluid" src="imgaes/favicon/4.jpg" alt=""></div>
+                        <div class="second">
+                            <div class="head">
+                                <h6>اسم المجال</h6>
+                                <p><span class="stars">
+                                    <span class="fa fa-star checked"></span>
+                                    <span class="fa fa-star checked"></span>
+                                    <span class="fa fa-star checked"></span>
+                                    <span class="fa fa-star checked"></span>
+                                    <span class="fa fa-star checked"></span>
+                                    </span>5.0
+                                </p>
+                            </div>
+                            <div class="body">
+                                <h4>اسم الكورس</h4>
+                                <p>ملخص عما يحتويه هذا لكورس ومقدمه عنه حتا تفهم محتواه</p>
+                                <a href="courses-deatils.html" class="active">اقرا اكثر</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3 mb-md-4">
+                    <div class="cont">
+                        <div class="first"><img class="img-fluid" src="imgaes/favicon/2.jpg" alt=""></div>
+                        <div class="second">
+                            <div class="head">
+                                <h6>اسم المجال</h6>
+                                <p><span class="stars">
+                                    <span class="fa fa-star checked"></span>
+                                    <span class="fa fa-star checked"></span>
+                                    <span class="fa fa-star checked"></span>
+                                    <span class="fa fa-star checked"></span>
+                                    <span class="fa fa-star checked"></span>
+                                    </span>5.0
+                                </p>
+                            </div>
+                            <div class="body">
+                                <h4>اسم الكورس</h4>
+                                <p>ملخص عما يحتويه هذا لكورس ومقدمه عنه حتا تفهم محتواه</p>
+                                <a href="courses-deatils.html" class="active">اقرا اكثر</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3 mb-md-4">
+                    <div class="cont">
+                        <div class="first"><img class="img-fluid" src="imgaes/favicon/3.jpg" alt=""></div>
+                        <div class="second">
+                            <div class="head">
+                                <h6>اسم المجال</h6>
+                                <p><span class="stars">
+                                    <span class="fa fa-star checked"></span>
+                                    <span class="fa fa-star checked"></span>
+                                    <span class="fa fa-star checked"></span>
+                                    <span class="fa fa-star checked"></span>
+                                    <span class="fa fa-star checked"></span>
+                                    </span>5.0
+                                </p>
+                            </div>
+                            <div class="body">
+                                <h4>اسم الكورس</h4>
+                                <p>ملخص عما يحتويه هذا لكورس ومقدمه عنه حتا تفهم محتواه</p>
+                                <a href="courses-deatils.html" class="active">اقرا اكثر</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3 mb-md-4">
+                    <div class="cont">
+                        <div class="first"><img class="img-fluid" src="imgaes/favicon/1.jpg" alt=""></div>
+                        <div class="second">
+                            <div class="head">
+                                <h6>اسم المجال</h6>
+                                <p><span class="stars">
+                                    <span class="fa fa-star checked"></span>
+                                    <span class="fa fa-star checked"></span>
+                                    <span class="fa fa-star checked"></span>
+                                    <span class="fa fa-star checked"></span>
+                                    <span class="fa fa-star checked"></span>
+                                    </span>5.0
+                                </p>
+                            </div>
+                            <div class="body">
+                                <h4>اسم الكورس</h4>
+                                <p>ملخص عما يحتويه هذا لكورس ومقدمه عنه حتا تفهم محتواه</p>
+                                <a href="courses-deatils.html" class="active">اقرا اكثر</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <!-- start  content row -->
+                <div class="col-md-3 mb-md-4">
+                    <div class="cont">
+                        <div class="first"><img class="img-fluid" src="imgaes/favicon/4.jpg" alt=""></div>
+                        <div class="second">
+                            <div class="head">
+                                <h6>اسم المجال</h6>
+                                <p><span class="stars">
+                                    <span class="fa fa-star checked"></span>
+                                    <span class="fa fa-star checked"></span>
+                                    <span class="fa fa-star checked"></span>
+                                    <span class="fa fa-star checked"></span>
+                                    <span class="fa fa-star checked"></span>
+                                    </span>5.0
+                                </p>
+                            </div>
+                            <div class="body">
+                                <h4>اسم الكورس</h4>
+                                <p>ملخص عما يحتويه هذا لكورس ومقدمه عنه حتا تفهم محتواه</p>
+                                <a href="courses-deatils.html" class="active">اقرا اكثر</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3 mb-md-4">
+                    <div class="cont">
+                        <div class="first"><img class="img-fluid" src="imgaes/favicon/2.jpg" alt=""></div>
+                        <div class="second">
+                            <div class="head">
+                                <h6>اسم المجال</h6>
+                                <p><span class="stars">
+                                    <span class="fa fa-star checked"></span>
+                                    <span class="fa fa-star checked"></span>
+                                    <span class="fa fa-star checked"></span>
+                                    <span class="fa fa-star checked"></span>
+                                    <span class="fa fa-star checked"></span>
+                                    </span>5.0
+                                </p>
+                            </div>
+                            <div class="body">
+                                <h4>اسم الكورس</h4>
+                                <p>ملخص عما يحتويه هذا لكورس ومقدمه عنه حتا تفهم محتواه</p>
+                                <a href="courses-deatils.html" class="active">اقرا اكثر</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3 mb-md-4">
+                    <div class="cont">
+                        <div class="first"><img class="img-fluid" src="imgaes/favicon/3.jpg" alt=""></div>
+                        <div class="second">
+                            <div class="head">
+                                <h6>اسم المجال</h6>
+                                <p><span class="stars">
+                                    <span class="fa fa-star checked"></span>
+                                    <span class="fa fa-star checked"></span>
+                                    <span class="fa fa-star checked"></span>
+                                    <span class="fa fa-star checked"></span>
+                                    <span class="fa fa-star checked"></span>
+                                    </span>5.0
+                                </p>
+                            </div>
+                            <div class="body">
+                                <h4>اسم الكورس</h4>
+                                <p>ملخص عما يحتويه هذا لكورس ومقدمه عنه حتا تفهم محتواه</p>
+                                <a href="courses-deatils.html" class="active">اقرا اكثر</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3 mb-md-4">
+                    <div class="cont">
+                        <div class="first"><img class="img-fluid" src="imgaes/favicon/1.jpg" alt=""></div>
+                        <div class="second">
+                            <div class="head">
+                                <h6>اسم المجال</h6>
+                                <p><span class="stars">
+                                    <span class="fa fa-star checked"></span>
+                                    <span class="fa fa-star checked"></span>
+                                    <span class="fa fa-star checked"></span>
+                                    <span class="fa fa-star checked"></span>
+                                    <span class="fa fa-star checked"></span>
+                                    </span>5.0
+                                </p>
+                            </div>
+                            <div class="body">
+                                <h4>اسم الكورس</h4>
+                                <p>ملخص عما يحتويه هذا لكورس ومقدمه عنه حتا تفهم محتواه</p>
+                                <a href="courses-deatils.html" class="active">اقرا اكثر</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container" v-show="o5" id="c5">
+            <div class="row">
+                <!-- start  content row -->
+                <div class="col-md-3 mb-md-4">
+                    <div class="cont">
+                        <div class="first"><img class="img-fluid" src="imgaes/favicon/4.jpg" alt=""></div>
+                        <div class="second">
+                            <div class="head">
+                                <h6>اسم المجال</h6>
+                                <p><span class="stars">
+                                    <span class="fa fa-star checked"></span>
+                                    <span class="fa fa-star checked"></span>
+                                    <span class="fa fa-star checked"></span>
+                                    <span class="fa fa-star checked"></span>
+                                    <span class="fa fa-star checked"></span>
+                                    </span>5.0
+                                </p>
+                            </div>
+                            <div class="body">
+                                <h4>اسم الكورس</h4>
+                                <p>ملخص عما يحتويه هذا لكورس ومقدمه عنه حتا تفهم محتواه</p>
+                                <a href="courses-deatils.html" class="active">اقرا اكثر</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3 mb-md-4">
+                    <div class="cont">
+                        <div class="first"><img class="img-fluid" src="imgaes/favicon/2.jpg" alt=""></div>
+                        <div class="second">
+                            <div class="head">
+                                <h6>اسم المجال</h6>
+                                <p><span class="stars">
+                                    <span class="fa fa-star checked"></span>
+                                    <span class="fa fa-star checked"></span>
+                                    <span class="fa fa-star checked"></span>
+                                    <span class="fa fa-star checked"></span>
+                                    <span class="fa fa-star checked"></span>
+                                    </span>5.0
+                                </p>
+                            </div>
+                            <div class="body">
+                                <h4>اسم الكورس</h4>
+                                <p>ملخص عما يحتويه هذا لكورس ومقدمه عنه حتا تفهم محتواه</p>
+                                <a href="courses-deatils.html" class="active">اقرا اكثر</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3 mb-md-4">
+                    <div class="cont">
+                        <div class="first"><img class="img-fluid" src="imgaes/favicon/3.jpg" alt=""></div>
+                        <div class="second">
+                            <div class="head">
+                                <h6>اسم المجال</h6>
+                                <p><span class="stars">
+                                    <span class="fa fa-star checked"></span>
+                                    <span class="fa fa-star checked"></span>
+                                    <span class="fa fa-star checked"></span>
+                                    <span class="fa fa-star checked"></span>
+                                    <span class="fa fa-star checked"></span>
+                                    </span>5.0
+                                </p>
+                            </div>
+                            <div class="body">
+                                <h4>اسم الكورس</h4>
+                                <p>ملخص عما يحتويه هذا لكورس ومقدمه عنه حتا تفهم محتواه</p>
+                                <a href="courses-deatils.html" class="active">اقرا اكثر</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3 mb-md-4">
+                    <div class="cont">
+                        <div class="first"><img class="img-fluid" src="imgaes/favicon/1.jpg" alt=""></div>
+                        <div class="second">
+                            <div class="head">
+                                <h6>اسم المجال</h6>
+                                <p><span class="stars">
+                                    <span class="fa fa-star checked"></span>
+                                    <span class="fa fa-star checked"></span>
+                                    <span class="fa fa-star checked"></span>
+                                    <span class="fa fa-star checked"></span>
+                                    <span class="fa fa-star checked"></span>
+                                    </span>5.0
+                                </p>
+                            </div>
+                            <div class="body">
+                                <h4>اسم الكورس</h4>
+                                <p>ملخص عما يحتويه هذا لكورس ومقدمه عنه حتا تفهم محتواه</p>
+                                <a href="courses-deatils.html" class="active">اقرا اكثر</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <!-- start  content row -->
+                <div class="col-md-3 mb-md-4">
+                    <div class="cont">
+                        <div class="first"><img class="img-fluid" src="imgaes/favicon/4.jpg" alt=""></div>
+                        <div class="second">
+                            <div class="head">
+                                <h6>اسم المجال</h6>
+                                <p><span class="stars">
+                                    <span class="fa fa-star checked"></span>
+                                    <span class="fa fa-star checked"></span>
+                                    <span class="fa fa-star checked"></span>
+                                    <span class="fa fa-star checked"></span>
+                                    <span class="fa fa-star checked"></span>
+                                    </span>5.0
+                                </p>
+                            </div>
+                            <div class="body">
+                                <h4>اسم الكورس</h4>
+                                <p>ملخص عما يحتويه هذا لكورس ومقدمه عنه حتا تفهم محتواه</p>
+                                <a href="courses-deatils.html" class="active">اقرا اكثر</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3 mb-md-4">
+                    <div class="cont">
+                        <div class="first"><img class="img-fluid" src="imgaes/favicon/2.jpg" alt=""></div>
+                        <div class="second">
+                            <div class="head">
+                                <h6>اسم المجال</h6>
+                                <p><span class="stars">
+                                    <span class="fa fa-star checked"></span>
+                                    <span class="fa fa-star checked"></span>
+                                    <span class="fa fa-star checked"></span>
+                                    <span class="fa fa-star checked"></span>
+                                    <span class="fa fa-star checked"></span>
+                                    </span>5.0
+                                </p>
+                            </div>
+                            <div class="body">
+                                <h4>اسم الكورس</h4>
+                                <p>ملخص عما يحتويه هذا لكورس ومقدمه عنه حتا تفهم محتواه</p>
+                                <a href="courses-deatils.html" class="active">اقرا اكثر</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3 mb-md-4">
+                    <div class="cont">
+                        <div class="first"><img class="img-fluid" src="imgaes/favicon/3.jpg" alt=""></div>
+                        <div class="second">
+                            <div class="head">
+                                <h6>اسم المجال</h6>
+                                <p><span class="stars">
+                                    <span class="fa fa-star checked"></span>
+                                    <span class="fa fa-star checked"></span>
+                                    <span class="fa fa-star checked"></span>
+                                    <span class="fa fa-star checked"></span>
+                                    <span class="fa fa-star checked"></span>
+                                    </span>5.0
+                                </p>
+                            </div>
+                            <div class="body">
+                                <h4>اسم الكورس</h4>
+                                <p>ملخص عما يحتويه هذا لكورس ومقدمه عنه حتا تفهم محتواه</p>
+                                <a href="courses-deatils.html" class="active">اقرا اكثر</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3 mb-md-4">
+                    <div class="cont">
+                        <div class="first"><img class="img-fluid" src="imgaes/favicon/1.jpg" alt=""></div>
+                        <div class="second">
+                            <div class="head">
+                                <h6>اسم المجال</h6>
+                                <p><span class="stars">
+                                    <span class="fa fa-star checked"></span>
+                                    <span class="fa fa-star checked"></span>
+                                    <span class="fa fa-star checked"></span>
+                                    <span class="fa fa-star checked"></span>
+                                    <span class="fa fa-star checked"></span>
+                                    </span>5.0
+                                </p>
+                            </div>
+                            <div class="body">
+                                <h4>اسم الكورس</h4>
+                                <p>ملخص عما يحتويه هذا لكورس ومقدمه عنه حتا تفهم محتواه</p>
+                                <a href="courses-deatils.html" class="active">اقرا اكثر</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container" v-show="o6" id="c6">
+            <div class="row">
+                <!-- start  content row -->
+                <div class="col-md-3 mb-md-4">
+                    <div class="cont">
+                        <div class="first"><img class="img-fluid" src="imgaes/favicon/4.jpg" alt=""></div>
+                        <div class="second">
+                            <div class="head">
+                                <h6>اسم المجال</h6>
+                                <p><span class="stars">
+                                    <span class="fa fa-star checked"></span>
+                                    <span class="fa fa-star checked"></span>
+                                    <span class="fa fa-star checked"></span>
+                                    <span class="fa fa-star checked"></span>
+                                    <span class="fa fa-star checked"></span>
+                                    </span>5.0
+                                </p>
+                            </div>
+                            <div class="body">
+                                <h4>اسم الكورس</h4>
+                                <p>ملخص عما يحتويه هذا لكورس ومقدمه عنه حتا تفهم محتواه</p>
+                                <a href="courses-deatils.html" class="active">اقرا اكثر</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3 mb-md-4">
+                    <div class="cont">
+                        <div class="first"><img class="img-fluid" src="imgaes/favicon/2.jpg" alt=""></div>
+                        <div class="second">
+                            <div class="head">
+                                <h6>اسم المجال</h6>
+                                <p><span class="stars">
+                                    <span class="fa fa-star checked"></span>
+                                    <span class="fa fa-star checked"></span>
+                                    <span class="fa fa-star checked"></span>
+                                    <span class="fa fa-star checked"></span>
+                                    <span class="fa fa-star checked"></span>
+                                    </span>5.0
+                                </p>
+                            </div>
+                            <div class="body">
+                                <h4>اسم الكورس</h4>
+                                <p>ملخص عما يحتويه هذا لكورس ومقدمه عنه حتا تفهم محتواه</p>
+                                <a href="courses-deatils.html" class="active">اقرا اكثر</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3 mb-md-4">
+                    <div class="cont">
+                        <div class="first"><img class="img-fluid" src="imgaes/favicon/3.jpg" alt=""></div>
+                        <div class="second">
+                            <div class="head">
+                                <h6>اسم المجال</h6>
+                                <p><span class="stars">
+                                    <span class="fa fa-star checked"></span>
+                                    <span class="fa fa-star checked"></span>
+                                    <span class="fa fa-star checked"></span>
+                                    <span class="fa fa-star checked"></span>
+                                    <span class="fa fa-star checked"></span>
+                                    </span>5.0
+                                </p>
+                            </div>
+                            <div class="body">
+                                <h4>اسم الكورس</h4>
+                                <p>ملخص عما يحتويه هذا لكورس ومقدمه عنه حتا تفهم محتواه</p>
+                                <a href="courses-deatils.html" class="active">اقرا اكثر</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3 mb-md-4">
+                    <div class="cont">
+                        <div class="first"><img class="img-fluid" src="imgaes/favicon/1.jpg" alt=""></div>
+                        <div class="second">
+                            <div class="head">
+                                <h6>اسم المجال</h6>
+                                <p><span class="stars">
+                                    <span class="fa fa-star checked"></span>
+                                    <span class="fa fa-star checked"></span>
+                                    <span class="fa fa-star checked"></span>
+                                    <span class="fa fa-star checked"></span>
+                                    <span class="fa fa-star checked"></span>
+                                    </span>5.0
+                                </p>
+                            </div>
+                            <div class="body">
+                                <h4>اسم الكورس</h4>
+                                <p>ملخص عما يحتويه هذا لكورس ومقدمه عنه حتا تفهم محتواه</p>
+                                <a href="courses-deatils.html" class="active">اقرا اكثر</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <!-- start  content row -->
+                <div class="col-md-3 mb-md-4">
+                    <div class="cont">
+                        <div class="first"><img class="img-fluid" src="imgaes/favicon/4.jpg" alt=""></div>
+                        <div class="second">
+                            <div class="head">
+                                <h6>اسم المجال</h6>
+                                <p><span class="stars">
+                                    <span class="fa fa-star checked"></span>
+                                    <span class="fa fa-star checked"></span>
+                                    <span class="fa fa-star checked"></span>
+                                    <span class="fa fa-star checked"></span>
+                                    <span class="fa fa-star checked"></span>
+                                    </span>5.0
+                                </p>
+                            </div>
+                            <div class="body">
+                                <h4>اسم الكورس</h4>
+                                <p>ملخص عما يحتويه هذا لكورس ومقدمه عنه حتا تفهم محتواه</p>
+                                <a href="courses-deatils.html" class="active">اقرا اكثر</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3 mb-md-4">
+                    <div class="cont">
+                        <div class="first"><img class="img-fluid" src="imgaes/favicon/2.jpg" alt=""></div>
+                        <div class="second">
+                            <div class="head">
+                                <h6>اسم المجال</h6>
+                                <p><span class="stars">
+                                    <span class="fa fa-star checked"></span>
+                                    <span class="fa fa-star checked"></span>
+                                    <span class="fa fa-star checked"></span>
+                                    <span class="fa fa-star checked"></span>
+                                    <span class="fa fa-star checked"></span>
+                                    </span>5.0
+                                </p>
+                            </div>
+                            <div class="body">
+                                <h4>اسم الكورس</h4>
+                                <p>ملخص عما يحتويه هذا لكورس ومقدمه عنه حتا تفهم محتواه</p>
+                                <a href="courses-deatils.html" class="active">اقرا اكثر</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3 mb-md-4">
+                    <div class="cont">
+                        <div class="first"><img class="img-fluid" src="imgaes/favicon/3.jpg" alt=""></div>
+                        <div class="second">
+                            <div class="head">
+                                <h6>اسم المجال</h6>
+                                <p><span class="stars">
+                                    <span class="fa fa-star checked"></span>
+                                    <span class="fa fa-star checked"></span>
+                                    <span class="fa fa-star checked"></span>
+                                    <span class="fa fa-star checked"></span>
+                                    <span class="fa fa-star checked"></span>
+                                    </span>5.0
+                                </p>
+                            </div>
+                            <div class="body">
+                                <h4>اسم الكورس</h4>
+                                <p>ملخص عما يحتويه هذا لكورس ومقدمه عنه حتا تفهم محتواه</p>
+                                <a href="courses-deatils.html" class="active">اقرا اكثر</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3 mb-md-4">
+                    <div class="cont">
+                        <div class="first"><img class="img-fluid" src="imgaes/favicon/1.jpg" alt=""></div>
+                        <div class="second">
+                            <div class="head">
+                                <h6>اسم المجال</h6>
+                                <p><span class="stars">
+                                    <span class="fa fa-star checked"></span>
+                                    <span class="fa fa-star checked"></span>
+                                    <span class="fa fa-star checked"></span>
+                                    <span class="fa fa-star checked"></span>
+                                    <span class="fa fa-star checked"></span>
+                                    </span>5.0
+                                </p>
+                            </div>
+                            <div class="body">
+                                <h4>اسم الكورس</h4>
+                                <p>ملخص عما يحتويه هذا لكورس ومقدمه عنه حتا تفهم محتواه</p>
+                                <a href="courses-deatils.html" class="active">اقرا اكثر</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container" v-show="o7" id="c7">
+            <div class="row">
+                <!-- start  content row -->
+                <div class="col-md-3 mb-md-4">
+                    <div class="cont">
+                        <div class="first"><img class="img-fluid" src="imgaes/favicon/4.jpg" alt=""></div>
+                        <div class="second">
+                            <div class="head">
+                                <h6>اسم المجال</h6>
+                                <p><span class="stars">
+                                    <span class="fa fa-star checked"></span>
+                                    <span class="fa fa-star checked"></span>
+                                    <span class="fa fa-star checked"></span>
+                                    <span class="fa fa-star checked"></span>
+                                    <span class="fa fa-star checked"></span>
+                                    </span>5.0
+                                </p>
+                            </div>
+                            <div class="body">
+                                <h4>اسم الكورس</h4>
+                                <p>ملخص عما يحتويه هذا لكورس ومقدمه عنه حتا تفهم محتواه</p>
+                                <a href="courses-deatils.html" class="active">اقرا اكثر</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3 mb-md-4">
+                    <div class="cont">
+                        <div class="first"><img class="img-fluid" src="imgaes/favicon/2.jpg" alt=""></div>
+                        <div class="second">
+                            <div class="head">
+                                <h6>اسم المجال</h6>
+                                <p><span class="stars">
+                                    <span class="fa fa-star checked"></span>
+                                    <span class="fa fa-star checked"></span>
+                                    <span class="fa fa-star checked"></span>
+                                    <span class="fa fa-star checked"></span>
+                                    <span class="fa fa-star checked"></span>
+                                    </span>5.0
+                                </p>
+                            </div>
+                            <div class="body">
+                                <h4>اسم الكورس</h4>
+                                <p>ملخص عما يحتويه هذا لكورس ومقدمه عنه حتا تفهم محتواه</p>
+                                <a href="courses-deatils.html" class="active">اقرا اكثر</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3 mb-md-4">
+                    <div class="cont">
+                        <div class="first"><img class="img-fluid" src="imgaes/favicon/3.jpg" alt=""></div>
+                        <div class="second">
+                            <div class="head">
+                                <h6>اسم المجال</h6>
+                                <p><span class="stars">
+                                    <span class="fa fa-star checked"></span>
+                                    <span class="fa fa-star checked"></span>
+                                    <span class="fa fa-star checked"></span>
+                                    <span class="fa fa-star checked"></span>
+                                    <span class="fa fa-star checked"></span>
+                                    </span>5.0
+                                </p>
+                            </div>
+                            <div class="body">
+                                <h4>اسم الكورس</h4>
+                                <p>ملخص عما يحتويه هذا لكورس ومقدمه عنه حتا تفهم محتواه</p>
+                                <a href="courses-deatils.html" class="active">اقرا اكثر</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3 mb-md-4">
+                    <div class="cont">
+                        <div class="first"><img class="img-fluid" src="imgaes/favicon/1.jpg" alt=""></div>
+                        <div class="second">
+                            <div class="head">
+                                <h6>اسم المجال</h6>
+                                <p><span class="stars">
+                                    <span class="fa fa-star checked"></span>
+                                    <span class="fa fa-star checked"></span>
+                                    <span class="fa fa-star checked"></span>
+                                    <span class="fa fa-star checked"></span>
+                                    <span class="fa fa-star checked"></span>
+                                    </span>5.0
+                                </p>
+                            </div>
+                            <div class="body">
+                                <h4>اسم الكورس</h4>
+                                <p>ملخص عما يحتويه هذا لكورس ومقدمه عنه حتا تفهم محتواه</p>
+                                <a href="courses-deatils.html" class="active">اقرا اكثر</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <!-- start  content row -->
+                <div class="col-md-3 mb-md-4">
+                    <div class="cont">
+                        <div class="first"><img class="img-fluid" src="imgaes/favicon/4.jpg" alt=""></div>
+                        <div class="second">
+                            <div class="head">
+                                <h6>اسم المجال</h6>
+                                <p><span class="stars">
+                                    <span class="fa fa-star checked"></span>
+                                    <span class="fa fa-star checked"></span>
+                                    <span class="fa fa-star checked"></span>
+                                    <span class="fa fa-star checked"></span>
+                                    <span class="fa fa-star checked"></span>
+                                    </span>5.0
+                                </p>
+                            </div>
+                            <div class="body">
+                                <h4>اسم الكورس</h4>
+                                <p>ملخص عما يحتويه هذا لكورس ومقدمه عنه حتا تفهم محتواه</p>
+                                <a href="courses-deatils.html" class="active">اقرا اكثر</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3 mb-md-4">
+                    <div class="cont">
+                        <div class="first"><img class="img-fluid" src="imgaes/favicon/2.jpg" alt=""></div>
+                        <div class="second">
+                            <div class="head">
+                                <h6>اسم المجال</h6>
+                                <p><span class="stars">
+                                    <span class="fa fa-star checked"></span>
+                                    <span class="fa fa-star checked"></span>
+                                    <span class="fa fa-star checked"></span>
+                                    <span class="fa fa-star checked"></span>
+                                    <span class="fa fa-star checked"></span>
+                                    </span>5.0
+                                </p>
+                            </div>
+                            <div class="body">
+                                <h4>اسم الكورس</h4>
+                                <p>ملخص عما يحتويه هذا لكورس ومقدمه عنه حتا تفهم محتواه</p>
+                                <a href="courses-deatils.html" class="active">اقرا اكثر</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3 mb-md-4">
+                    <div class="cont">
+                        <div class="first"><img class="img-fluid" src="imgaes/favicon/3.jpg" alt=""></div>
+                        <div class="second">
+                            <div class="head">
+                                <h6>اسم المجال</h6>
+                                <p><span class="stars">
+                                    <span class="fa fa-star checked"></span>
+                                    <span class="fa fa-star checked"></span>
+                                    <span class="fa fa-star checked"></span>
+                                    <span class="fa fa-star checked"></span>
+                                    <span class="fa fa-star checked"></span>
+                                    </span>5.0
+                                </p>
+                            </div>
+                            <div class="body">
+                                <h4>اسم الكورس</h4>
+                                <p>ملخص عما يحتويه هذا لكورس ومقدمه عنه حتا تفهم محتواه</p>
+                                <a href="courses-deatils.html" class="active">اقرا اكثر</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3 mb-md-4">
+                    <div class="cont">
+                        <div class="first"><img class="img-fluid" src="imgaes/favicon/1.jpg" alt=""></div>
+                        <div class="second">
+                            <div class="head">
+                                <h6>اسم المجال</h6>
+                                <p><span class="stars">
+                                    <span class="fa fa-star checked"></span>
+                                    <span class="fa fa-star checked"></span>
+                                    <span class="fa fa-star checked"></span>
+                                    <span class="fa fa-star checked"></span>
+                                    <span class="fa fa-star checked"></span>
+                                    </span>5.0
+                                </p>
+                            </div>
+                            <div class="body">
+                                <h4>اسم الكورس</h4>
+                                <p>ملخص عما يحتويه هذا لكورس ومقدمه عنه حتا تفهم محتواه</p>
+                                <a href="courses-deatils.html" class="active">اقرا اكثر</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- start footer -->
+    <footer>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4">
+                    <p>All CopyRights &copy; For Fci 2019</p>
+                </div>
+                <div class="col-md-8">
+                    <ul class="soical-icon">
+                        <li><a href=""><i class="fa fa-facebook"></i></a></li>
+                        <li><a href=""><i class="fa fa-twitter"></i></a></li>
+                        <li><a href=""><i class="fa fa-linkedin"></i></a></li>
+                        <li><a href=""><i class="fa fa-youtube"></i></a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- start footer -->
+    <!-- arrow -->
+    <a href="javascript:" id="return-to-top"><i class="fa fa-arrow-up icon-chevron-up" id="i"></i></a>
+    <!-- End footer -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="js/jquery-3.1.1.min.js"></script>
+    <script src="js/jquery-ui.min.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/vue.js"></script>
+    <script src="js/main.js"></script>
+</body>
+
+</html>

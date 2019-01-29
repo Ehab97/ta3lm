@@ -1,0 +1,119 @@
+@import 'variables';
+@import 'mixins';
+@import 'base';
+@import 'layout';
+
+/*header strat*/
+
+#return-to-top {
+    @include arrow;
+    #i {
+        @include icon;
+    }
+    &:hover {
+        #i {
+            color: #fff;
+            top: 5px;
+        }
+    }
+}
+
+
+/*nav bar*/
+
+header {
+    @include header;
+    .bg-light {
+        box-shadow: 0 4px 2px -2px rgba(204, 204, 204, 0.5);
+    }
+}
+
+.active {
+    @include active;
+    cursor: pointer;
+    @include smooth(.5s);
+    &:hover {
+        background: $blue;
+    }
+}
+
+//end header
+.courses {
+    margin: 40px 0;
+    form {
+        padding: 25px;
+        border-radius: 5px;
+        background: #ededed;
+        margin: 40px 0;
+        margin-bottom: 10px;
+        .form-group {
+            label,
+            .custom-select {
+                width: 100%;
+            }
+        }
+    }
+    .second {
+        margin: 20px 0;
+        background-color: #fff;
+        .form-group {
+            label {
+                width: 50%;
+                float: right;
+            }
+            .form-control {
+                background: #ededed;
+                border: none;
+                float: left;
+                width: 50%;
+            }
+        }
+    }
+    .video {
+        background: #ededed;
+        margin: 20px 0;
+        form {
+            .form-control {
+                background: #fff;
+            }
+        }
+    }
+}
+
+//footer
+footer {
+    @include footer;
+}
+
+//End footer
+// Extra large devices (large desktops, 1200px and up)
+@media (min-width: 1200px) {
+    .x {
+        page-break-after: 0;
+    }
+}
+
+// Large devices (desktops, 992px and up)
+@media (min-width: 992px) {
+    .x {
+        page-break-after: 0;
+    }
+}
+
+// Medium devices (tablets, 768px and up)
+@media (min-width: 768px) and (max-width:992px) {
+    .add-uints #accordion .content ul li button {
+        width: 45%;
+    }
+}
+
+// Small devices (landscape phones, 576px and up)
+@media (min-width: 576px) {
+    .x {
+        page-break-after: 0;
+    }
+}
+
+@media (max-width: 480px) {}
+
+@include footerMedia;

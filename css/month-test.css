@@ -1,0 +1,354 @@
+@charset "UTF-8";
+@import "https://fonts.googleapis.com/css?family=Cairo";
+@import "https://fonts.googleapis.com/css?family=Cairo|Tajawal";
+body {
+  direction: rtl;
+  font-family: 'Cairo', 'Tajawal', sans-serif; }
+
+@media (min-width: 768px) {
+  .l .how-to-use .row:first-child {
+    background-color: #3480E3; } }
+
+/*header strat*/
+/*nav bar*/
+header .bg-light {
+  margin: 0 0 0 0;
+  background-color: #fff !important; }
+
+header .pic img {
+  margin-top: -5px;
+  height: 60px;
+  width: 60px;
+  border-radius: 50%;
+  cursor: pointer;
+  margin-right: 15px; }
+
+header .navbar-light .navbar-nav .nav-link {
+  color: #333333 !important;
+  margin-right: 20px; }
+
+header .dropdown-menu {
+  padding: 0 5px 10px 5px; }
+  header .dropdown-menu a {
+    margin-bottom: 5px;
+    color: #777;
+    border-bottom: 1px solid rgba(52, 128, 227, 0.1); }
+    header .dropdown-menu a:last-of-type {
+      border-bottom: none; }
+    header .dropdown-menu a:hover {
+      color: #E53167;
+      background: #fff; }
+
+header .navbar-light .navbar-nav .nav-link:hover {
+  color: #E53167 !important;
+  -webkit-box-shadow: inset 1px 0px 1px 0px #e1e1e1c7;
+  box-shadow: inset 1px 0px 1px 0px #e1e1e1c7;
+  -webkit-transform: perspective(1px) translateZ(0);
+  transform: perspective(1px) translateZ(0);
+  -webkit-box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+  -webkit-transition-duration: 0.6s;
+  -o-transition-duration: 0.6s;
+  transition-duration: 0.6s;
+  -webkit-transition-property: transform;
+  -webkit-transition-property: -webkit-transform;
+  transition-property: -webkit-transform;
+  -o-transition-property: transform;
+  transition-property: transform;
+  transition-property: transform, -webkit-transform;
+  -webkit-transform: scale(1.1);
+  -ms-transform: scale(1.1);
+  transform: scale(1.1);
+  -webkit-transition: all 0.6s ease-in-out;
+  -o-transition: all 0.6s ease-in-out;
+  transition: all 0.6s ease-in-out; }
+
+header .intro {
+  background: url("../imgaes/bg/header.jpeg") center center no-repeat;
+  -webkit-background-size: cover;
+  -o-background-size: cover;
+  -moz-background-size: cover;
+  background-size: cover; }
+
+header .overlay {
+  position: relative;
+  background: rgba(52, 128, 227, 0.49);
+  background: -moz-linear-gradient(right, rgba(229, 49, 103, 0.53) 0%, rgba(116, 117, 180, 0.5) 52.49%, rgba(52, 128, 227, 0.49) 100%) !important;
+  background: -webkit-gradient(linear, bottom right, bottom left, color-stop(0%, rgba(229, 49, 103, 0.53)), color-stop(52.49%, rgba(116, 117, 180, 0.5)), color-stop(100%, rgba(52, 128, 227, 0.49))) !important;
+  background: -webkit-linear-gradient(right, rgba(229, 49, 103, 0.53) 0%, rgba(52, 128, 227, 0.49) 100%) !important;
+  background: -o-linear-gradient(right, rgba(229, 49, 103, 0.53) 0%, rgba(116, 117, 180, 0.5) 52.49%, rgba(52, 128, 227, 0.49) 100%) !important;
+  background: -webkit-gradient(linear, right top, left top, from(rgba(229, 49, 103, 0.53)), color-stop(52.49%, rgba(116, 117, 180, 0.5)), to(rgba(52, 128, 227, 0.49))) !important;
+  background: -webkit-linear-gradient(right, rgba(229, 49, 103, 0.53) 0%, rgba(116, 117, 180, 0.5) 52.49%, rgba(52, 128, 227, 0.49) 100%) !important;
+  background: linear-gradient(to left, rgba(229, 49, 103, 0.53) 0%, rgba(116, 117, 180, 0.5) 52.49%, rgba(52, 128, 227, 0.49) 100%) !important;
+  filter: progid:DXImageTransform.Microsoft.gradient(GradientType=0, startColorstr=rgba(229, 49, 103, 0.53), endColorstr=rgba(52, 128, 227, 0.49));
+  height: 100%;
+  padding: 110px 0;
+  color: #fff; }
+
+.active {
+  padding: 5px 20px;
+  background: #E53167;
+  border: 1px solid #fff;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  border-radius: 25px;
+  color: #fff;
+  -webkit-transition: 0.5s ease-out;
+  -moz-transition: 0.5s ease-out;
+  -o-transition: 0.5s ease-out;
+  transition: 0.5s ease-out;
+  position: absolute;
+  bottom: 3px;
+  left: 42%;
+  cursor: pointer; }
+  .active:hover {
+    background-color: #3480E3; }
+
+.test {
+  margin: 50px 0;
+  width: 100%;
+  padding: 0; }
+  .test #count {
+    position: fixed;
+    right: 0;
+    top: 5%;
+    background-color: rgba(52, 128, 227, 0.99);
+    color: #fff;
+    padding: 5px 30px;
+    margin: 0; }
+  .test .questions {
+    padding: 25px 15px;
+    margin: 0 auto;
+    border-radius: 10px;
+    width: 100%;
+    margin: 0 auto;
+    background-color: rgba(52, 128, 227, 0.1);
+    overflow: auto; }
+    .test .questions h3,
+    .test .questions h2 {
+      color: #3480E3; }
+    .test .questions form ul {
+      border-bottom: 1px dotted #ccc;
+      width: 100%;
+      float: right; }
+      .test .questions form ul li {
+        list-style: none;
+        float: right; }
+        .test .questions form ul li .option-input {
+          -webkit-appearance: none;
+          -moz-appearance: none;
+          -ms-appearance: none;
+          -o-appearance: none;
+          appearance: none;
+          position: relative;
+          top: 0;
+          right: 0;
+          bottom: 0;
+          left: 0;
+          height: 40px;
+          width: 40px;
+          -webkit-transition: all 0.15s ease-out 0s;
+          -o-transition: all 0.15s ease-out 0s;
+          transition: all 0.15s ease-out 0s;
+          background: #cbd1d8;
+          border: none;
+          color: #fff;
+          cursor: pointer;
+          display: inline-block;
+          margin-right: 0.5rem;
+          outline: none;
+          position: relative;
+          z-index: 1000;
+          content: ''; }
+          .test .questions form ul li .option-input:hover {
+            background: #9faab7; }
+          .test .questions form ul li .option-input:checked {
+            background: #3480E3; }
+            .test .questions form ul li .option-input:checked::before {
+              height: 40px;
+              width: 40px;
+              position: absolute;
+              content: '✔';
+              display: inline-block;
+              font-size: 26.66667px;
+              text-align: center;
+              line-height: 40px; }
+            .test .questions form ul li .option-input:checked::after {
+              background: #3480E3;
+              content: '';
+              display: block;
+              position: relative;
+              z-index: 100; }
+          .test .questions form ul li .option-input.radio {
+            border-radius: 50%; }
+            .test .questions form ul li .option-input.radio::after {
+              border-radius: 50%; }
+        .test .questions form ul li p {
+          font-size: 20px;
+          font-weight: 700; }
+    .test .questions .form ul {
+      margin-bottom: 30px; }
+      .test .questions .form ul li {
+        position: relative;
+        cursor: pointer;
+        float: left;
+        width: 25%; }
+        .test .questions .form ul li span {
+          position: relative;
+          display: inline-block;
+          margin: 20px 10px;
+          font-size: 18px;
+          padding: 5px 0px;
+          background: #fff;
+          color: #ccc;
+          border-radius: 5px;
+          width: 80%;
+          -webkit-transition: 0.7s ease-out;
+          -moz-transition: 0.7s ease-out;
+          -o-transition: 0.7s ease-out;
+          transition: 0.7s ease-out; }
+          .test .questions .form ul li span input[type=radio] {
+            margin-left: 10px;
+            cursor: pointer; }
+          .test .questions .form ul li span:hover {
+            color: #000;
+            background-color: rgba(52, 128, 227, 0.25); }
+
+footer {
+  background-color: #14243E;
+  padding: 40px 0 20px 0;
+  color: #fff; }
+  footer .soical-icon {
+    list-style: none; }
+    footer .soical-icon li {
+      float: left;
+      border-radius: 50%;
+      background: #3480E3;
+      color: #fff;
+      height: 30px;
+      width: 30px;
+      line-height: 2;
+      text-align: center;
+      margin: 0 5px; }
+      footer .soical-icon li a {
+        text-decoration: none;
+        color: #fff; }
+        footer .soical-icon li a i:hover {
+          cursor: pointer;
+          -webkit-box-shadow: inset 1px 0px 1px 0px #e1e1e1c7;
+          box-shadow: inset 1px 0px 1px 0px #e1e1e1c7;
+          -webkit-transform: perspective(1px) translateZ(0);
+          transform: perspective(1px) translateZ(0);
+          -webkit-box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+          box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+          -webkit-transition-duration: 0.6s;
+          -o-transition-duration: 0.6s;
+          transition-duration: 0.6s;
+          -webkit-transition-property: transform;
+          -webkit-transition-property: -webkit-transform;
+          transition-property: -webkit-transform;
+          -o-transition-property: transform;
+          transition-property: transform;
+          transition-property: transform, -webkit-transform;
+          -webkit-transform: scale(1.1);
+          -ms-transform: scale(1.1);
+          transform: scale(1.1);
+          -webkit-transition: all 0.6s ease-in-out;
+          -o-transition: all 0.6s ease-in-out;
+          transition: all 0.6s ease-in-out; }
+      footer .soical-icon li:hover {
+        cursor: pointer;
+        -webkit-box-shadow: inset 1px 0px 1px 0px #e1e1e1c7;
+        box-shadow: inset 1px 0px 1px 0px #e1e1e1c7;
+        -webkit-transform: perspective(1px) translateZ(0);
+        transform: perspective(1px) translateZ(0);
+        -webkit-box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+        box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+        -webkit-transition-duration: 0.6s;
+        -o-transition-duration: 0.6s;
+        transition-duration: 0.6s;
+        -webkit-transition-property: transform;
+        -webkit-transition-property: -webkit-transform;
+        transition-property: -webkit-transform;
+        -o-transition-property: transform;
+        transition-property: transform;
+        transition-property: transform, -webkit-transform;
+        -webkit-transform: scale(1.1);
+        -ms-transform: scale(1.1);
+        transform: scale(1.1);
+        -webkit-transition: all 0.6s ease-in-out;
+        -o-transition: all 0.6s ease-in-out;
+        transition: all 0.6s ease-in-out; }
+
+#return-to-top {
+  text-align: center;
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background: black;
+  background: rgba(0, 0, 0, 0.7);
+  width: 50px;
+  height: 50px;
+  display: block;
+  text-decoration: none;
+  -webkit-border-radius: 35px;
+  -moz-border-radius: 35px;
+  border-radius: 35px;
+  display: none;
+  -webkit-transition: all 0.3s linear;
+  -moz-transition: all 0.3s ease;
+  -ms-transition: all 0.3s ease;
+  -o-transition: all 0.3s ease;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease; }
+  #return-to-top:hover {
+    background: #3480E3; }
+  #return-to-top #i {
+    color: #fff;
+    margin: 0;
+    position: relative;
+    left: 0px;
+    top: 15px;
+    font-size: 20px;
+    -webkit-transition: all 0.3s ease;
+    -moz-transition: all 0.3s ease;
+    -ms-transition: all 0.3s ease;
+    -o-transition: all 0.3s ease;
+    transition: all 0.3s ease; }
+  #return-to-top:hover #i {
+    color: #fff;
+    top: 5px; }
+
+@media (min-width: 1200px) {
+  .x {
+    page-break-after: 0; } }
+
+@media (min-width: 992px) {
+  .x {
+    page-break-after: 0; } }
+
+@media (min-width: 768px) and (max-width: 992px) {
+  .active {
+    left: 40%; } }
+
+@media (min-width: 576px) {
+  .x {
+    page-break-after: 0; } }
+
+@media (max-width: 480px) {
+  footer {
+    text-align: center; }
+    footer .col-md-8 {
+      padding-left: 50px; }
+    footer .soical-icon {
+      text-align: center; }
+      footer .soical-icon li {
+        margin: 0 10px; }
+        footer .soical-icon li i {
+          text-align: center; }
+  .test .questions form ul {
+    margin-bottom: 35px; }
+  .test .questions {
+    padding: 20px 0px 20px 25px; }
+  .active {
+    left: 24%; } }

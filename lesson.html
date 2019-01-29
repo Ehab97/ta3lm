@@ -1,0 +1,304 @@
+<!doctype html>
+<html lang="ar">
+
+<head>
+    <!-- Required meta tags -->
+    <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/jquery-ui.min.css">
+    <link rel="stylesheet" href="css/lesson.css">
+    <link rel="shortcut icon" href="images/favicon/logo.png">
+    <title>lesson</title>
+</head>
+
+<body>
+    <!-- start header -->
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <div class="container">
+                <a class="navbar-brand" href="home.html">
+                    EDU
+                </a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                    <ul class="navbar-nav  mr-auto">
+                        <li class="nav-item">
+                            <a class="nav-link" href="about-us.html">من نحن
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="contactus.html">التواصل معانا</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="Lesson.html" style="color: #E53167 !important;">الدرس</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="extra-courses.html">الكورسات الاضافيه</a>
+                        </li>
+                        <li class="nav-item dropdown" href="profile.html" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            <!-- <a class="nav-link" href="profile.html" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> -->
+
+                            <div class="pic">
+                                <img src="imgaes/child/pexels-photo-261895.jpeg" alt="child" style="border: #E53167 !important;">
+                            </div>
+                            <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                                <a class="dropdown-item" href="profile.html">الصفحه</a>
+                                <a class="dropdown-item" href="#">خروج</a>
+                                <a class="dropdown-item" href="#">شئ اخر</a>
+                            </div>
+                            <!-- </a> -->
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <div class="intro text-center">
+            <div class="overlay">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-sm-12">
+                            <div class="content">
+                                <h2>
+                                    الدرس</h2>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <!-- End header -->
+    <section class="lesson">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-md-2">
+                    <div class="arrow">
+                        <ul class="list-unstyled">
+                            <li class="v2">
+                                <i class="fa fa-video-camera" aria-hidden="true"></i>
+                                <span>شاهد الدرس</span></li>
+                            <li class="i2">
+                                <i class="fa fa-book" aria-hidden="true"></i>
+                                <span>
+                                    اقرا الدرس</span></li>
+                            <li class="q2">
+                                <i class="fa fa-question" aria-hidden="true"></i>
+                                <span>
+                                    اجب على الاسئله</span></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-md-10">
+                    <div class="content text-center">
+                        <div class="video" id="v">
+                            <video controls="controls">
+                                <source src="movie.mp4" type="video/mp4">
+                                <source src="movie.ogg" type="video/ogg">
+                                Your browser does not support the video tag.
+                            </video>
+                            <fieldset class="rating">
+                                <input type="radio" id="star5" name="rating" value="5" /><label class="full" for="star5" title="Awesome - 5 stars"></label>
+                                <input type="radio" id="star4half" name="rating" value="4 and a half" /><label class="half" for="star4half" title="Pretty good - 4.5 stars"></label>
+                                <input type="radio" id="star4" name="rating" value="4" /><label class="full" for="star4" title="Pretty good - 4 stars"></label>
+                                <input type="radio" id="star3half" name="rating" value="3 and a half" /><label class="half" for="star3half" title="Meh - 3.5 stars"></label>
+                                <input type="radio" id="star3" name="rating" value="3" /><label class="full" for="star3" title="Meh - 3 stars"></label>
+                                <input type="radio" id="star2half" name="rating" value="2 and a half" /><label class="half" for="star2half" title="Kinda bad - 2.5 stars"></label>
+                                <input type="radio" id="star2" name="rating" value="2" /><label class="full" for="star2" title="Kinda bad - 2 stars"></label>
+                                <input type="radio" id="star1half" name="rating" value="1 and a half" /><label class="half" for="star1half" title="Meh - 1.5 stars"></label>
+                                <input type="radio" id="star1" name="rating" value="1" /><label class="full" for="star1" title="Sucks big time - 1 star"></label>
+                                <input type="radio" id="starhalf" name="rating" value="half" /><label class="half" for="starhalf" title="Sucks big time - 0.5 stars"></label>
+                            </fieldset>
+                        </div>
+                        <div class="read" id="i">
+                            <embed src="pdfs/part_1" type="application/pdf" />
+                        </div>
+                        <div class="questions text-center" id="q">
+
+                            <h3>عنوان الاختبار</h3>
+                            <h2 class="float-right" style="margin:20px 0;">صح ام خطا ؟</h2>
+                            <form method="post">
+                                <ul>
+                                    <li class="float-right">
+                                        <p>
+                                            1-السوال الاول
+                                        </p>
+                                    </li>
+                                    <li class="float-left">
+                                        <input type="radio" class="option-input radio" name="example" checked />
+                                    </li>
+                                    <li class="float-left">
+                                        <input type="radio" class="option-input radio" name="example" />
+                                    </li>
+
+                                </ul>
+
+                            </form>
+                            <form method="post">
+                                <ul>
+                                    <li class="float-right">
+                                        <p>
+                                            2-السوال الاول
+                                        </p>
+                                    </li>
+                                    <li class="float-left">
+                                        <input type="radio" class="option-input radio" name="example" checked />
+                                    </li>
+                                    <li class="float-left">
+                                        <input type="radio" class="option-input radio" name="example" />
+                                    </li>
+
+                                </ul>
+
+                            </form>
+                            <form method="post">
+                                <ul>
+                                    <li class="float-right">
+                                        <p>
+                                            3-السوال الاول
+                                        </p>
+                                    </li>
+                                    <li class="float-left">
+                                        <input type="radio" class="option-input radio" name="example" checked />
+                                    </li>
+                                    <li class="float-left">
+                                        <input type="radio" class="option-input radio" name="example" />
+                                    </li>
+
+                                </ul>
+
+                            </form>
+                            <form method="post">
+                                <ul>
+                                    <li class="float-right">
+                                        <p>
+                                            4-السوال الاول
+                                        </p>
+                                    </li>
+                                    <li class="float-left">
+                                        <input type="radio" class="option-input radio" name="example" checked />
+                                    </li>
+                                    <li class="float-left">
+                                        <input type="radio" class="option-input radio" name="example" />
+                                    </li>
+
+                                </ul>
+
+                            </form>
+                            <h2 class="float-right" style="margin:20px 0;width: 100%;">اختر؟</h2>
+                            <form class="form" method="post">
+                                <ul>
+                                    <p>1-لوريم ايبزم سين تلت بيرو دن؟</p>
+                                    <li>
+                                        <span class="choose"><input type="radio" name="like" checked="">واحد</span>
+                                    </li>
+                                    <li>
+                                        <span class="choose"> <input type="radio" name="like" checked="">اثنان</span>
+                                    </li>
+                                    <li>
+                                        <span class="choose">  <input type="radio" name="like" checked="">الثالث</span>
+                                    </li>
+                                    <li>
+                                        <span class="choose"> <input type="radio" name="like" checked="">اربعه</span>
+                                    </li>
+                                </ul>
+                            </form>
+                            <form class="form" method="post">
+                                <ul>
+                                    <p>1-لوريم ايبزم سين تلت بيرو دن؟</p>
+                                    <li>
+                                        <span class="choose"><input type="radio" name="like" checked="">واحد</span>
+                                    </li>
+                                    <li>
+                                        <span class="choose"> <input type="radio" name="like" checked="">اثنان</span>
+                                    </li>
+                                    <li>
+                                        <span class="choose">  <input type="radio" name="like" checked="">الثالث</span>
+                                    </li>
+                                    <li>
+                                        <span class="choose"> <input type="radio" name="like" checked="">اربعه</span>
+                                    </li>
+                                </ul>
+                            </form>
+                            <form class="form" method="post">
+                                <ul>
+                                    <p>1-لوريم ايبزم سين تلت بيرو دن؟</p>
+                                    <li>
+                                        <span class="choose"><input type="radio" name="like" checked="">واحد</span>
+                                    </li>
+                                    <li>
+                                        <span class="choose"> <input type="radio" name="like" checked="">اثنان</span>
+                                    </li>
+                                    <li>
+                                        <span class="choose">  <input type="radio" name="like" checked="">الثالث</span>
+                                    </li>
+                                    <li>
+                                        <span class="choose"> <input type="radio" name="like" checked="">اربعه</span>
+                                    </li>
+                                </ul>
+                            </form>
+                            <form class="form" method="post">
+                                <ul>
+                                    <p>1-لوريم ايبزم سين تلت بيرو دن؟</p>
+                                    <li>
+                                        <span class="choose"><input type="radio" name="like" checked="">واحد</span>
+                                    </li>
+                                    <li>
+                                        <span class="choose"> <input type="radio" name="like" checked="">اثنان</span>
+                                    </li>
+                                    <li>
+                                        <span class="choose">  <input type="radio" name="like" checked="">الثالث</span>
+                                    </li>
+                                    <li>
+                                        <span class="choose"> <input type="radio" name="like" checked="">اربعه</span>
+                                    </li>
+                                </ul>
+                            </form>
+                            <input type="submit" class="active" value="تسليم الاختبار">
+
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- start footer -->
+    <footer>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4">
+                    <p>All CopyRights &copy; For Fci 2019</p>
+                </div>
+                <div class="col-md-8">
+                    <ul class="soical-icon">
+                        <li><a href=""><i class="fa fa-facebook"></i></a></li>
+                        <li><a href=""><i class="fa fa-twitter"></i></a></li>
+                        <li><a href=""><i class="fa fa-linkedin"></i></a></li>
+                        <li><a href=""><i class="fa fa-youtube"></i></a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- start footer -->
+    <!-- arrow -->
+    <a href="javascript:" id="return-to-top"><i class="fa fa-arrow-up icon-chevron-up" id="i"></i></a>
+    <!-- End footer -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="js/jquery-3.1.1.min.js"></script>
+    <script src="js/jquery-ui.min.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/vue.js"></script>
+    <script src="js/main.js"></script>
+</body>
+
+</html>

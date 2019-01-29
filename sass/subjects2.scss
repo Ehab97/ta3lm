@@ -1,0 +1,268 @@
+        @import "variables";
+        @import "mixins";
+        @import "base";
+        @import "layout";
+        body {
+            font-family: $primary_fonts;
+        }
+        
+        //header
+        header {
+            @include header;
+        }
+        
+        .active {
+            @include active;
+            cursor: pointer;
+            @include smooth(.8);
+            &:hover {
+                background-color: $blue;
+                border-color: $blue;
+            }
+        }
+        
+        .btc {
+            @include active;
+            cursor: pointer;
+            width: 50%;
+            padding: 10px 20px;
+            &:hover {
+                background-color: $blue;
+                border-color: $blue;
+                @include smooth(.8);
+            }
+        }
+        
+        //End Heaer
+        //subjects
+        /*end header*/
+        
+        .ticket {
+            box-shadow: 0 0 25px 0 rgba(204, 204, 204, 0.5);
+            contain: content;
+            background-color: #fff;
+            border-radius: 5px;
+            img {
+                float: right;
+                width: 100px;
+                height: 100px;
+                margin: 0 auto;
+                margin-left: 15px;
+            }
+            .v {
+                padding: 10px 0 10px 0;
+                h5 {
+                    font-weight: 700;
+                }
+                h6 {
+                    font-weight: 600;
+                }
+                span {
+                    color: #777;
+                }
+            }
+        }
+        
+        .schduler {
+            margin-bottom: 25px;
+            h4 {
+                margin: 10px 0;
+            }
+            .content {
+                background-color: #fff;
+                box-shadow: 0 0 25px 0 rgba(204, 204, 204, 0.5);
+                border-radius: 5px;
+                color: $blue;
+                padding: 5px 10px 5px 15px;
+                margin: 10px 0;
+                contain: content;
+                i {
+                    float: right;
+                    font-weight: 50;
+                    margin-left: 25%;
+                }
+                p {
+                    float: right;
+                    font-size: 18px;
+                    margin: 10px 0;
+                    font-weight: bold;
+                }
+                .active {
+                    float: left;
+                    margin: 10px 0;
+                }
+            }
+        }
+        
+        .test {
+            margin: 40px auto;
+            .month {
+                background-color: $blue;
+                text-align: right;
+                color: #fff;
+                width: 45%;
+                padding: 10px 15px 10px 0;
+                box-shadow: 0 0 25px 0 rgba(204, 204, 204, 0.5);
+                border-radius: 5px;
+            }
+            .tests {
+                box-shadow: 0 0 25px 0 rgba(204, 204, 204, 0.5);
+                border-radius: 5px;
+                background: #fff;
+                color: $text2;
+                padding: 10px 15px 5px 15px;
+                width: 45%;
+                contain: content;
+                .active {
+                    float: right;
+                    margin: 5px 0;
+                }
+                p {
+                    float: left;
+                    margin: 5px 0;
+                }
+            }
+        }
+        
+        #counter3 {
+            font-size: 30px;
+            background-color: #ddd;
+            padding: 16px 20px;
+            border-radius: 5px;
+            color: #fff;
+            float: left;
+            margin-top: -48px;
+            position: relative;
+            z-index: 2;
+            margin-left: -15px;
+            margin-bottom: 0px;
+        }
+        
+        //End subjects
+        //footer
+        footer {
+            @include footer;
+        }
+        
+        //End footer
+        @media (min-width: 1200px) {
+            .p0 {
+                padding-right: 0;
+                padding-left: 0;
+            }
+            .p5 {
+                padding-right: 0;
+                margin-top: 40px;
+                margin-bottom: 50px;
+            }
+            .mro {
+                margin-right: 30px;
+            }
+        }
+        /* Portrait tablet to landscape and desktop */
+        
+        @media (min-width: 768px) and (max-width: 1024px) {
+            .ticket {
+                img {
+                    float: right;
+                    width: 80px;
+                    height: 80px;
+                    margin: 0 auto;
+                    margin-left: 15px;
+                }
+                .v {
+                    padding: 0;
+                    h5 {
+                        font-weight: 400;
+                    }
+                    h6 {
+                        font-weight: 300;
+                    }
+                }
+            }
+            .p5 {
+                padding-right: 0;
+                margin-top: 40px;
+                margin-bottom: 50px;
+            }
+            .p0 {
+                padding-right: 0;
+                padding-left: 0;
+            }
+            .schduler .content {
+                padding: 5px 10px 5px 15px;
+                margin: 10px 0;
+                i {
+                    float: right;
+                    font-weight: 50;
+                    margin-left: 10%;
+                }
+                p {
+                    float: right;
+                    font-size: 16px;
+                    margin: 10px 0;
+                }
+                .active {
+                    float: left;
+                    margin: 10px 0;
+                    padding: 5px 10px;
+                }
+            }
+        }
+        
+        #return-to-top {
+            @include arrow;
+            #i {
+                @include icon;
+            }
+            &:hover {
+                #i {
+                    color: #fff;
+                    top: 5px;
+                }
+            }
+        }
+        /* Landscape phone to portrait tablet */
+        
+        @media (max-width: 767px) {}
+        /* Landscape phones and down */
+        
+        @media (max-width: 480px) {
+            #counter3 {
+                font-size: 30px;
+                background-color: #ddd;
+                padding: 16px 20px;
+                border-radius: 5px;
+                color: #fff;
+                float: left;
+                margin-top: -47px;
+                position: relative;
+                z-index: 2;
+                margin-left: -40px;
+                margin-bottom: 0px;
+            }
+            .p5 {
+                padding-right: 15px;
+                margin-top: 20px;
+                margin-bottom: 20px;
+            }
+            .schduler .content {
+                padding: 5px 10px 5px 15px;
+                margin: 20px 0;
+                i {
+                    float: right;
+                    font-weight: 50;
+                    margin-left: 10%;
+                }
+            }
+            .test {
+                .tests {
+                    width: 100%;
+                }
+                .month {
+                    width: 100%;
+                }
+            }
+        }
+        
+        @include footerMedia;

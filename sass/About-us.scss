@@ -1,0 +1,219 @@
+@import "variables";
+@import "mixins";
+@import "base";
+@import "layout";
+@import 'main';
+body {
+    font-family: $primary_fonts;
+}
+
+
+/*header strat*/
+
+#return-to-top {
+    @include arrow;
+    #i {
+        @include icon;
+    }
+    &:hover {
+        #i {
+            color: #fff;
+            top: 5px;
+        }
+    }
+}
+
+
+/*nav bar*/
+
+header {
+    .bg-light {
+        margin: 10px 0 0 0;
+        background-color: #fff!important;
+    }
+    @include header;
+}
+
+
+/*end header*/
+
+
+/* bref section */
+
+.bref {
+    margin: 40px 0;
+    padding: 40px 0;
+}
+
+.bref .content img {
+    margin-bottom: 30px;
+}
+
+.bref p {
+    font-size: 17px;
+    letter-spacing: .5px;
+    margin-bottom: 2rem;
+    color: #666666;
+    margin-bottom: 0;
+}
+
+
+/* start team section */
+
+.team {
+    padding: 40px 0;
+    margin: 40px 0;
+    position: relative;
+}
+
+.team .h1 {
+    margin-bottom: 80px;
+}
+
+.team .c {
+    margin-bottom: 50px;
+    background: url('../imgaes/about/zDo-gAo0_400x400.jpg') center center no-repeat;
+    border-radius: 50%;
+    padding: 0;
+    height: 250px;
+    /* width: 250px; */
+    background-size: cover;
+    /* contain: content; */
+}
+
+.team .c .overlay {
+    display: none;
+    position: absolute;
+    top: 5%;
+    left: 5%;
+    right: 5%;
+    bottom: 5%;
+    background-color: #20acea8c;
+    padding: 100px 0 0 0;
+    text-align: center;
+    font-size: 20px;
+    color: #FFF;
+    border-radius: 50%;
+    font-weight: bold;
+}
+
+.team .c:hover {
+    @include trans;
+}
+
+.team .c:hover .overlay {
+    display: block;
+}
+
+
+/* servicse start */
+
+.services {
+    background-color: #EEEEEE;
+    padding: 40px 0;
+}
+
+//footer
+footer {
+    background-color: #14243E;
+    padding: 40px 0;
+    color: #fff;
+    .soical-icon {
+        list-style: none;
+        li {
+            float: left;
+            border-radius: 50%;
+            background: #3480E3;
+            color: #fff;
+            height: 30px;
+            width: 30px;
+            line-height: 2;
+            text-align: center;
+            margin: 0 5px;
+            a {
+                text-decoration: none;
+                color: #fff;
+                i {
+                    &:hover {
+                        cursor: pointer;
+                        @include trans;
+                    }
+                }
+            }
+            &:hover {
+                cursor: pointer;
+                @include trans;
+            }
+        }
+    }
+}
+
+//End footer
+// midai query
+// Large devices (desktops, 992px and up)
+@media (min-width: 992px) {}
+
+// Medium devices (tablets, 768px and up)
+@media (max-width:1024px) {}
+
+
+/* Landscape phone to portrait tablet */
+
+@media (max-width: 768px) {}
+
+// Small devices (landscape phones, 576px and up)
+@media (max-width: 480px) {
+    footer {
+        text-align: center;
+        .col-md-8 {
+            padding-left: 50px
+        }
+        .soical-icon {
+            text-align: center;
+            li {
+                margin: 0 10px;
+                i {
+                    text-align: center
+                }
+            }
+        }
+    }
+    .team .c .overlay {
+        padding: 55px 0 0 0;
+    }
+    .team .c {
+        width: 55%;
+        margin: 0 auto;
+        margin-bottom: 10%;
+        height: 170px;
+    }
+}
+
+
+/*media query*/
+
+
+/* Large desktop */
+
+@media (min-width: 1200px) {
+    .fuck {
+        margin-top: 60px;
+        font-weight: 600;
+    }
+}
+
+
+/* Portrait tablet to landscape and desktop */
+
+@media (min-width: 768px) and (max-width: 979px) {
+    .team .c .overlay {
+        padding: 55px 0 0 0;
+    }
+    .team .c {
+        height: 160px;
+        margin-bottom: 20px;
+    }
+    .fuck {
+        margin-top: 30px;
+    }
+}

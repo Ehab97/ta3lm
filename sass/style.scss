@@ -1,0 +1,287 @@
+@import "variables";
+@import "mixins";
+@import "base";
+@import "layout";
+body {
+    font-family: $primary_fonts;
+}
+
+//header
+header {
+    color: $white;
+    @include backrgound-image('../imgaes/bg/header.jpeg');
+}
+
+header .overlay .bg-light {
+    background-color: #f8f9fa00!important;
+    color: $white;
+}
+
+.navbar-light .navbar-nav .nav-link,
+.navbar-light .navbar-brand,
+.navbar-light .navbar-nav .nav-link.active {
+    color: $white;
+}
+
+.navbar-light .navbar-nav .nav-link {
+    margin: 0 10px;
+    padding: 5px 20px;
+    background: transparent;
+    border: 1px solid transparent;
+    box-sizing: border-box;
+    border-radius: 25px;
+    @include smooth(.5s);
+    &:hover {
+        @include active;
+    }
+}
+
+header .overlay {
+    position: relative;
+    @include linear-gradient-right(rgba(229, 49, 103, 0.53), rgba(116, 117, 180, 0.5), rgba(52, 128, 227, 0.49));
+    height: 100%;
+    padding: 10px 0 150px 0;
+}
+
+header .content {
+    margin: 40px auto;
+    p {
+        margin: 0 0 50px 0;
+    }
+    a {
+        color: $white;
+        text-decoration: none;
+        &:hover &:checked {
+            @include smooth(1s);
+        }
+    }
+}
+
+.active {
+    @include active;
+    &:hover {
+        background-color: $blue;
+        border-color: $blue;
+        @include smooth(.8);
+    }
+}
+
+//End Heaer
+//Mobile
+.mobile {
+    direction: ltr;
+    @include backrgound-image('../imgaes/bg/ban.png');
+    padding: 50px 0;
+    color: $text2;
+    P {
+        font-size: 18PX;
+        margin: 20px 0;
+    }
+}
+
+//End Mobil
+//how-to-use
+.how-to-use {
+    margin: 0 auto;
+    .con {
+        color: $white;
+        h2 {
+            margin-bottom: 30px;
+        }
+    }
+}
+
+.v video {}
+
+//End how-to-use
+//school-subject
+.school-subject,
+.Extra-courses,
+.school-schdule,
+.virtual-assitant {
+    margin-bottom: 20px;
+    padding: 20px 0;
+    img {
+        width: 400px;
+        height: 300px;
+    }
+    h2 {
+        margin: 40px 0;
+    }
+    p {
+        color: $text2;
+        font-size: 20px;
+    }
+}
+
+//End school-subject
+
+/*strst testmonials section*/
+
+.testmonials {
+    background: center center no-repeat;
+    background-color: #77D1BD;
+    -webkit-background-size: cover;
+    -o-background-size: cover;
+    -moz-background-size: cover;
+    background-size: cover;
+    position: relative;
+}
+
+.testmonials {
+    background: rgba(52, 128, 227, 0.1);
+    padding: 40px 0;
+    color: #fff;
+    text-align: center
+}
+
+.testmonials .overlay h2 {
+    margin: 35px 0 50px 0;
+    color: #000;
+}
+
+.testmonials .overlay .card {
+    margin-bottom: 40px;
+    padding: 0 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 25px 0 rgba(204, 204, 204, 0.5);
+}
+
+.testmonials .overlay .card .pic img {
+    height: 70px;
+    width: 70px;
+    margin-top: -30px;
+    border-radius: 50%;
+}
+
+.testmonials .overlay .card .bod {
+    margin-top: 25px;
+    margin-bottom: 25px;
+    color: #000
+}
+
+.testmonials .overlay .card .bod p {
+    font-size: 20px;
+}
+
+.testmonials .overlay .card .bod span {
+    color: #868E96;
+    font-weight: bold;
+}
+
+.testmonials .overlay .card .bod span i {
+    margin-right: 10px;
+    font-size: 14px;
+    font-weight: 100;
+}
+
+.sponsor {
+    margin: 30px 0;
+    padding: 50px 0;
+    color: #000;
+    a {
+        text-decoration: none;
+    }
+    h2 {
+        margin-bottom: 60px;
+    }
+    img {
+        margin-bottom: 30px;
+        &:hover {
+            cursor: pointer;
+            @include trans;
+        }
+    }
+}
+
+//footer
+footer {
+    @include footer;
+}
+
+//arrow
+#return-to-top {
+    @include arrow;
+    #i {
+        @include icon;
+    }
+    &:hover {
+        #i {
+            color: #fff;
+            top: 5px;
+        }
+    }
+}
+
+//End footer
+// midai query
+// Large devices (desktops, 992px and up)
+@media (min-width: 992px) {
+    .l {
+        background-color: #3480E3;
+        padding: 40px 20px;
+        width: 100%;
+    }
+    .p0 {
+        padding: 0;
+    }
+}
+
+// Medium devices (tablets, 768px and up)
+@media (max-width:1024px) {
+    .l {
+        background-color: #3480E3;
+        padding: 5px 15px;
+        width: 100%;
+    }
+    .p0 {
+        padding: 0;
+    }
+}
+
+
+/* Landscape phone to portrait tablet */
+
+@media (max-width: 768px) {
+    .school-subject,
+    .Extra-courses,
+    .school-schdule,
+    .virtual-assitant {
+        margin-bottom: 20px;
+        img {
+            width: 340px;
+            height: 300px;
+        }
+        p {
+            font-size: 16px;
+        }
+    }
+}
+
+// Small devices (landscape phones, 576px and up)
+@media (max-width: 480px) {
+    .l {
+        background-color: #3480E3;
+        padding: 40px 20px;
+        width: 100%;
+    }
+    .p0 {
+        padding: 0;
+    }
+    .school-subject,
+    .Extra-courses,
+    .school-schdule,
+    .virtual-assitant {
+        margin-bottom: 20px;
+        img {
+            width: 290px;
+            height: 250px;
+            margin: 20px 0;
+        }
+        p {
+            font-size: 16px;
+        }
+    }
+}
+
+@include footerMedia;

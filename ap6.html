@@ -1,0 +1,459 @@
+<!doctype html>
+<html lang="ar">
+
+<head>
+    <!-- Required meta tags -->
+    <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/jquery-ui.min.css">
+    <link rel="stylesheet" href="css/ap6.css">
+    <link rel="shortcut icon" href="images/favicon/logo.png">
+    <title>admin panel 6</title>
+</head>
+
+<body>
+    <!-- start header -->
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <div class="container">
+                <a class="navbar-brand" href="home.html">
+                    EDU
+                </a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                    <ul class="navbar-nav  mr-auto">
+                        <li class="nav-item">
+                            <a class="nav-link" href="ap1.html"> السمتخدمين
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="ap2.html">المواد</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="ap6.html" style="color: #E53167 !important;">الكورسات الاضافيه</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link" href="profile.html" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                <div class="pic">
+                                    <img src="imgaes/child/pexels-photo-261895.jpeg" alt="child" style="border: #E53167 !important;">
+                                </div>
+                                <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                                    <a class="dropdown-item" href="#">خروج</a>
+                                </div>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <!-- End header -->
+    <section class="courses">
+        <div class="container">
+            <div class="row mb-5">
+                <div class="col-md-6">
+                    <h4>الكوراست المتاحه</h4>
+                </div>
+                <div class="col-md-6">
+                    <form method="" action="">
+                        <button class="active">ضف وحده +</button>
+                        <div class="form-group">
+                            <input type="email" class="form-control" placeholder="اسم الوحده">
+                        </div>
+                    </form>
+                </div>
+            </div>
+            <!-- start row accordion -->
+            <div class="row mb-5" id="app">
+
+                <div class="col-sm-12">
+                    <!-- start main accordion-->
+                    <div id="accordion">
+                        <!--head of accordion-->
+                        <h3 @click="up1=!up1;down1=!down1;up2=false;down2=true;up3=false;down3=true;up4=false;down4=true;">
+                            اسم الشهر
+                            <i class="fa fa-arrow-up" v-show="up1"></i>
+                            <i class="fa fa-arrow-down" v-show="down1"></i>
+                        </h3>
+                        <!--body of accordion-->
+                        <div>
+                            <div class="row">
+                                <div class="col-md-3 mb-3">
+                                    <form method="" action="">
+                                        <button class="active" style="float: right;">ضف كورس +</button>
+                                    </form>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-md-3">
+                                    <div class="content">
+                                        <div class="overlay">
+                                            <ul class="list-unstyled">
+                                                <li><span class="fspan">4.5</span></li>
+                                                <li>
+                                                    <h6>اسم الدرس</h6>
+                                                </li>
+                                                <li><span>125 طالب</span> <span>125 درس</span></li>
+                                                <li class="text-center">
+                                                    <button class="active b">تعديل</button>
+                                                    <button class="active r">مسح</button>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-3">
+                                    <div class="content">
+                                        <div class="overlay">
+                                            <ul class="list-unstyled">
+                                                <li><span class="fspan">4.5</span></li>
+                                                <li>
+                                                    <h6>اسم الدرس</h6>
+                                                </li>
+                                                <li><span>125 طالب</span> <span>125 درس</span></li>
+                                                <li class="text-center">
+                                                    <button class="active b">تعديل</button>
+                                                    <button class="active r">مسح</button>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-3">
+                                    <div class="content">
+                                        <div class="overlay">
+                                            <ul class="list-unstyled">
+                                                <li><span class="fspan">4.5</span></li>
+                                                <li>
+                                                    <h6>اسم الدرس</h6>
+                                                </li>
+                                                <li><span>125 طالب</span> <span>125 درس</span></li>
+                                                <li class="text-center">
+                                                    <button class="active b">تعديل</button>
+                                                    <button class="active r">مسح</button>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-3">
+                                    <div class="content">
+                                        <div class="overlay">
+                                            <ul class="list-unstyled">
+                                                <li><span class="fspan">4.5</span></li>
+                                                <li>
+                                                    <h6>اسم الدرس</h6>
+                                                </li>
+                                                <li><span>125 طالب</span> <span>125 درس</span></li>
+                                                <li class="text-center">
+                                                    <button class="active b">تعديل</button>
+                                                    <button class="active r">مسح</button>
+                                                </li>
+                                                </li>
+                                        </div>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-md-3">
+                                    <div class="content">
+                                        <div class="overlay">
+                                            <ul class="list-unstyled">
+                                                <li><span class="fspan">4.5</span></li>
+                                                <li>
+                                                    <h6>اسم الدرس</h6>
+                                                </li>
+                                                <li><span>125 طالب</span> <span>125 درس</span></li>
+                                                <li class="text-center">
+                                                    <button class="active b">تعديل</button>
+                                                    <button class="active r">مسح</button>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-3">
+                                    <div class="content">
+                                        <div class="overlay">
+                                            <ul class="list-unstyled">
+                                                <li><span class="fspan">4.5</span></li>
+                                                <li>
+                                                    <h6>اسم الدرس</h6>
+                                                </li>
+                                                <li><span>125 طالب</span> <span>125 درس</span></li>
+                                                <li class="text-center">
+                                                    <button class="active b">تعديل</button>
+                                                    <button class="active r">مسح</button>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-3">
+                                    <div class="content">
+                                        <div class="overlay">
+                                            <ul class="list-unstyled">
+                                                <li><span class="fspan">4.5</span></li>
+                                                <li>
+                                                    <h6>اسم الدرس</h6>
+                                                </li>
+                                                <li><span>125 طالب</span> <span>125 درس</span></li>
+                                                <li class="text-center">
+                                                    <button class="active b">تعديل</button>
+                                                    <button class="active r">مسح</button>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-3">
+                                    <div class="content">
+                                        <div class="overlay">
+                                            <ul class="list-unstyled">
+                                                <li><span class="fspan">4.5</span></li>
+                                                <li>
+                                                    <h6>اسم الدرس</h6>
+                                                </li>
+                                                <li><span>125 طالب</span> <span>125 درس</span></li>
+                                                <li class="text-center">
+                                                    <button class="active b">تعديل</button>
+                                                    <button class="active r">مسح</button>
+                                                </li>
+                                                </li>
+                                        </div>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                        <!--end of accordion-->
+                        <!--head of accordion-->
+                        <h3 @click="up1=false;down1=true;up2=true;down2=false;up3=false;down3=true;up4=false;down4=true;">
+                            اسم الشهر
+                            <i class="fa fa-arrow-up" v-show="up2"></i>
+                            <i class="fa fa-arrow-down" v-show="down2"></i>
+                        </h3>
+                        <!--body of accordion-->
+                        <div>
+                            <div class="row">
+                                <div class="col-md-3 mb-3">
+                                    <form method="" action="">
+                                        <button class="active" style="float: right;">ضف كورس +</button>
+                                    </form>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-md-3">
+                                    <div class="content">
+                                        <div class="overlay">
+                                            <ul class="list-unstyled">
+                                                <li><span class="fspan">4.5</span></li>
+                                                <li>
+                                                    <h6>اسم الدرس</h6>
+                                                </li>
+                                                <li><span>125 طالب</span> <span>125 درس</span></li>
+                                                <li class="text-center">
+                                                    <button class="active b">تعديل</button>
+                                                    <button class="active r">مسح</button>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-3">
+                                    <div class="content">
+                                        <div class="overlay">
+                                            <ul class="list-unstyled">
+                                                <li><span class="fspan">4.5</span></li>
+                                                <li>
+                                                    <h6>اسم الدرس</h6>
+                                                </li>
+                                                <li><span>125 طالب</span> <span>125 درس</span></li>
+                                                <li class="text-center">
+                                                    <button class="active b">تعديل</button>
+                                                    <button class="active r">مسح</button>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-3">
+                                    <div class="content">
+                                        <div class="overlay">
+                                            <ul class="list-unstyled">
+                                                <li><span class="fspan">4.5</span></li>
+                                                <li>
+                                                    <h6>اسم الدرس</h6>
+                                                </li>
+                                                <li><span>125 طالب</span> <span>125 درس</span></li>
+                                                <li class="text-center">
+                                                    <button class="active b">تعديل</button>
+                                                    <button class="active r">مسح</button>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-3">
+                                    <div class="content">
+                                        <div class="overlay">
+                                            <ul class="list-unstyled">
+                                                <li><span class="fspan">4.5</span></li>
+                                                <li>
+                                                    <h6>اسم الدرس</h6>
+                                                </li>
+                                                <li><span>125 طالب</span> <span>125 درس</span></li>
+                                                <li class="text-center">
+                                                    <button class="active b">تعديل</button>
+                                                    <button class="active r">مسح</button>
+                                                </li>
+                                                </li>
+                                        </div>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                        <!--end of accordion-->
+                        <!--head of accordion-->
+                        <h3 @click="up1=false;down1=true;up2=false;down2=true;up3=true;down3=false;up4=false;down4=true;">
+                            اسم الشهر
+                            <i class="fa fa-arrow-up" v-show="up3"></i>
+                            <i class="fa fa-arrow-down" v-show="down3"></i>
+                        </h3>
+                        <!--body of accordion-->
+                        <div>
+                            <div class="row">
+                                <div class="col-md-3 mb-3">
+                                    <form method="" action="">
+                                        <button class="active" style="float: right;">ضف كورس +</button>
+                                    </form>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-md-3">
+                                    <div class="content">
+                                        <div class="overlay">
+                                            <ul class="list-unstyled">
+                                                <li><span class="fspan">4.5</span></li>
+                                                <li>
+                                                    <h6>اسم الدرس</h6>
+                                                </li>
+                                                <li><span>125 طالب</span> <span>125 درس</span></li>
+                                                <li class="text-center">
+                                                    <button class="active b">تعديل</button>
+                                                    <button class="active r">مسح</button>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-3">
+                                    <div class="content">
+                                        <div class="overlay">
+                                            <ul class="list-unstyled">
+                                                <li><span class="fspan">4.5</span></li>
+                                                <li>
+                                                    <h6>اسم الدرس</h6>
+                                                </li>
+                                                <li><span>125 طالب</span> <span>125 درس</span></li>
+                                                <li class="text-center">
+                                                    <button class="active b">تعديل</button>
+                                                    <button class="active r">مسح</button>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-3">
+                                    <div class="content">
+                                        <div class="overlay">
+                                            <ul class="list-unstyled">
+                                                <li><span class="fspan">4.5</span></li>
+                                                <li>
+                                                    <h6>اسم الدرس</h6>
+                                                </li>
+                                                <li><span>125 طالب</span> <span>125 درس</span></li>
+                                                <li class="text-center">
+                                                    <button class="active b">تعديل</button>
+                                                    <button class="active r">مسح</button>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-3">
+                                    <div class="content">
+                                        <div class="overlay">
+                                            <ul class="list-unstyled">
+                                                <li><span class="fspan">4.5</span></li>
+                                                <li>
+                                                    <h6>اسم الدرس</h6>
+                                                </li>
+                                                <li><span>125 طالب</span> <span>125 درس</span></li>
+                                                <li class="text-center">
+                                                    <button class="active b">تعديل</button>
+                                                    <button class="active r">مسح</button>
+                                                </li>
+                                                </li>
+                                        </div>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                    <!--end of accordion-->
+
+                </div>
+                <!-- End main accordion-->
+            </div>
+        </div>
+        <!--end row accordion-->
+        </div>
+    </section>
+    <!-- start footer -->
+    <footer>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4">
+                    <p>All CopyRights &copy; For Fci 2019</p>
+                </div>
+                <div class="col-md-8">
+                    <ul class="soical-icon">
+                        <li><a href=""><i class="fa fa-facebook"></i></a></li>
+                        <li><a href=""><i class="fa fa-twitter"></i></a></li>
+                        <li><a href=""><i class="fa fa-linkedin"></i></a></li>
+                        <li><a href=""><i class="fa fa-youtube"></i></a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- start footer -->
+    <!-- arrow -->
+    <a href="javascript:" id="return-to-top"><i class="fa fa-arrow-up icon-chevron-up" id="i"></i></a>
+    <!-- End footer -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="js/jquery-3.1.1.min.js"></script>
+    <script src="js/jquery-ui.min.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/vue.js"></script>
+    <script src="js/main.js"></script>
+</body>
+
+</html>
+
+</html>

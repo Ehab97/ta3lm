@@ -1,0 +1,78 @@
+@import 'variables';
+@import 'mixins';
+@import 'base';
+@import 'layout';
+
+/*header strat*/
+
+
+/*nav bar*/
+
+header {
+    @include header;
+}
+
+//footer
+footer {
+    @include footer;
+}
+
+#return-to-top {
+    @include arrow;
+    #i {
+        @include icon;
+    }
+    &:hover {
+        #i {
+            color: #fff;
+            top: 5px;
+        }
+    }
+}
+
+//End footer
+// Extra large devices (large desktops, 1200px and up)
+@media (min-width: 1200px) {
+    .x {
+        page-break-after: 0;
+    }
+}
+
+// Large devices (desktops, 992px and up)
+@media (min-width: 992px) {
+    .x {
+        page-break-after: 0;
+    }
+}
+
+// Medium devices (tablets, 768px and up)
+@media (min-width: 768px) {
+    .x {
+        page-break-after: 0;
+    }
+}
+
+// Small devices (landscape phones, 576px and up)
+@media (min-width: 576px) {
+    .x {
+        page-break-after: 0;
+    }
+}
+
+@media (max-width: 480px) {
+    footer {
+        text-align: center;
+        .col-md-8 {
+            padding-left: 50px
+        }
+        .soical-icon {
+            text-align: center;
+            li {
+                margin: 0 10px;
+                i {
+                    text-align: center
+                }
+            }
+        }
+    }
+}

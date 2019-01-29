@@ -1,0 +1,258 @@
+
+@import "variables";
+@import "mixins";
+@import "base";
+@import "layout";
+
+/*header strat*/
+
+#return-to-top {
+    @include arrow;
+
+    #i {
+        @include icon;
+    }
+
+    &:hover {
+        #i {
+            color: #fff;
+            top: 5px;
+        }
+    }
+}
+
+/*nav bar*/
+
+header {
+    @include header;
+
+    .content {
+        background: none;
+    }
+}
+
+.active {
+    @include active;
+    @include smooth(0.5s);
+
+    cursor: pointer;
+    text-decoration: none;
+
+    &:hover {
+        background-color: $blue;
+    }
+}
+
+//End Header
+.focused{
+    border: none;
+    border-bottom: 2px solid $red;
+    background: #3480e329;
+}
+.none{
+    background:transparent;
+}
+.content {
+    background: rgba(52, 128, 227, 0.1);
+
+    nav {
+        margin: 0 0 40px 0;
+        min-width: 100%;
+        padding: 0 0 0 10%;
+
+        ul {
+            li {
+                border: 1px solid rgba(52, 128, 227, 0.1);
+                float: left;
+                padding: 15px 40px;
+                margin: 0 auto;
+                text-align: center;
+                cursor: pointer;
+
+                @include smooth(0.2s);
+
+                span {
+                    font-size: 18px;
+                    font-weight: 500;
+                }
+
+                &:hover {
+                    border: none;
+                    border-bottom: 2px solid $red;
+                    background: #3480e329;
+                }
+            }
+        }
+    }
+
+    .cont {
+        margin-top: 55px;
+        padding: 50px 0;
+
+        .first {
+            width: 100%;
+            text-align: center;
+
+            img {
+                box-shadow: 0px 20px 20px rgba(0, 0, 0, 0.2);
+                border-radius: 5px;
+                position: absolute;
+                top: 0px;
+                left: 5%;
+                right: 22px;
+                bottom: 0;
+            }
+        }
+
+        .second {
+            margin: 0 auto;
+            background: #fff;
+            border-radius: 5px;
+            box-shadow: 0px 20px 20px rgba(0, 0, 0, 0.2);
+            padding: 20px 5px;
+            text-align: center;
+            position: relative;
+
+            .head {
+                padding: 0 10px;
+                overflow: hidden;
+
+                h6 {
+                    float: right;
+                    font-weight: 400;
+                }
+
+                p {
+                    float: left;
+
+                    .stars {
+                        .checked {
+                            color: orange;
+                        }
+                    }
+                }
+            }
+
+            p {
+                color: $text2;
+            }
+        }
+
+        .body {
+            padding: 0 10px;
+
+            a {
+                text-decoration: none;
+            }
+
+            h4 {
+                text-align: right;
+                font-weight: 500;
+                margin-bottom: 15px;
+            }
+
+            p {
+                text-align: right;
+                font-size: 15px;
+                margin-bottom: 15px;
+            }
+
+            .active {}
+        }
+    }
+
+    .col-md-3 {
+        margin-bottom: 30px;
+    }
+}
+
+//footer
+footer {
+    @include footer;
+}
+
+//End footer
+// Extra large devices (large desktops, 1200px and up)
+@media (min-width: 1200px) {
+    .x {
+        page-break-after: 0;
+    }
+}
+
+// Large devices (desktops, 992px and up)
+@media (min-width: 992px) and (max-width: 1200px) {
+    .content nav ul li {
+        padding: 15px 30px;
+    }
+
+    .content .cont .first img {
+        position: initial;
+        width: 90%;
+    }
+}
+
+// Medium devices (tablets, 768px and up)
+@media (min-width: 768px) and (max-width: 992px) {
+    .content nav ul li {
+        padding: 15px 20px;
+    }
+
+    .content .cont .first img {
+        position: initial;
+        top: 0;
+        left: 0;
+        bottom: 0;
+        right: 5px;
+        width: 95%;
+    }
+
+    .content .cont .second {
+        padding: 15px 0;
+
+        .head {
+            h6 {
+                font-size: 14px;
+            }
+
+            p {
+                font-size: 8px;
+                margin-top: 3px;
+            }
+        }
+    }
+}
+
+// Small devices (landscape phones, 576px and up)
+@media (min-width: 576px) {
+    .x {
+        page-break-after: 0;
+    }
+}
+
+@media (max-width: 480px) {
+    .content {
+        nav {
+            padding: 0;
+
+            ul {
+                padding-left: 15%;
+
+                li {
+                    width: 100%;
+                    display: inline-block;
+                }
+            }
+        }
+    }
+
+    .content .cont .first img {
+        position: unset;
+    }
+
+    .content .cont .second {
+        width: 90%;
+        padding: 20px;
+    }
+}
+
+@include footerMedia;

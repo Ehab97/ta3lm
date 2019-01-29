@@ -1,0 +1,231 @@
+@import 'variables';
+@import 'mixins';
+@import 'base';
+@import 'layout';
+
+/*header strat*/
+
+
+/*nav bar*/
+
+header {
+    @include header;
+}
+
+.active {
+    @include active;
+    @include smooth(.5s);
+    position: absolute;
+    bottom: 3px;
+    left: 42%;
+    cursor: pointer;
+    &:hover {
+        background-color: $blue;
+    }
+}
+
+//test
+.test {
+    #count {
+        // position: relative;
+        position: fixed;
+        right: 0;
+        top: 5%;
+        background-color: rgba(52, 128, 227, 0.99);
+        color: #fff;
+        padding: 5px 30px;
+        margin: 0;
+    }
+    margin: 50px 0;
+    width: 100%;
+    padding: 0;
+    .questions {
+        padding: 25px 15px;
+        margin: 0 auto;
+        border-radius: 10px;
+        width: 100%;
+        margin: 0 auto;
+        background-color: rgba(52, 128, 227, 0.1);
+        // contain: content;
+        overflow: auto;
+        h3,
+        h2 {
+            color: $blue;
+        }
+        form {
+            ul {
+                border-bottom: 1px dotted #ccc;
+                width: 100%;
+                float: right;
+                li {
+                    .option-input {
+                        -webkit-appearance: none;
+                        -moz-appearance: none;
+                        -ms-appearance: none;
+                        -o-appearance: none;
+                        appearance: none;
+                        position: relative;
+                        top: 0;
+                        right: 0;
+                        bottom: 0;
+                        left: 0;
+                        height: 40px;
+                        width: 40px;
+                        transition: all 0.15s ease-out 0s;
+                        background: #cbd1d8;
+                        border: none;
+                        color: #fff;
+                        cursor: pointer;
+                        display: inline-block;
+                        margin-right: 0.5rem;
+                        outline: none;
+                        position: relative;
+                        z-index: 1000;
+                        content: '';
+                        &:hover {
+                            background: #9faab7;
+                        }
+                        &:checked {
+                            background: $blue;
+                            &::before {
+                                height: 40px;
+                                width: 40px;
+                                position: absolute;
+                                content: '✔';
+                                display: inline-block;
+                                font-size: 26.66667px;
+                                text-align: center;
+                                line-height: 40px;
+                            }
+                            &::after {
+                                background: $blue;
+                                content: '';
+                                display: block;
+                                position: relative;
+                                z-index: 100;
+                            }
+                        }
+                        &.radio {
+                            border-radius: 50%;
+                            &::after {
+                                border-radius: 50%;
+                            }
+                        }
+                    }
+                    list-style: none;
+                    float: right;
+                    p {
+                        font-size: 20px;
+                        font-weight: 700;
+                    }
+                }
+            }
+        }
+        .form {
+            ul {
+                margin-bottom: 30px;
+                li {
+                    position: relative;
+                    cursor: pointer;
+                    float: left;
+                    width: 25%;
+                    span {
+                        position: relative;
+                        display: inline-block;
+                        margin: 20px 10px;
+                        font-size: 18px;
+                        padding: 5px 0px;
+                        background: #fff;
+                        color: #ccc;
+                        border-radius: 5px;
+                        width: 80%;
+                        @include smooth(.7s);
+                        input[type=radio] {
+                            margin-left: 10px;
+                            cursor: pointer;
+                        }
+                        input {}
+                        &:hover {
+                            color: #000;
+                            background-color: rgba(52, 128, 227, 0.25);
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+//End Test
+footer {
+    @include footer;
+}
+
+#return-to-top {
+    @include arrow;
+    #i {
+        @include icon;
+    }
+    &:hover {
+        #i {
+            color: #fff;
+            top: 5px;
+        }
+    }
+}
+
+//End footer
+// Extra large devices (large desktops, 1200px and up)
+@media (min-width: 1200px) {
+    .x {
+        page-break-after: 0;
+    }
+}
+
+// Large devices (desktops, 992px and up)
+@media (min-width: 992px) {
+    .x {
+        page-break-after: 0;
+    }
+}
+
+// Medium devices (tablets, 768px and up)
+@media (min-width: 768px) and (max-width:992px) {
+    .active {
+        left: 40%;
+    }
+}
+
+// Small devices (landscape phones, 576px and up)
+@media (min-width: 576px) {
+    .x {
+        page-break-after: 0;
+    }
+}
+
+@media (max-width: 480px) {
+    footer {
+        text-align: center;
+        .col-md-8 {
+            padding-left: 50px
+        }
+        .soical-icon {
+            text-align: center;
+            li {
+                margin: 0 10px;
+                i {
+                    text-align: center
+                }
+            }
+        }
+    }
+    .test .questions form ul {
+        margin-bottom: 35px;
+    }
+    .test .questions {
+        padding: 20px 0px 20px 25px;
+    }
+    .active {
+        left: 24%;
+    }
+}

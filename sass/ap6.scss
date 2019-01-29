@@ -1,0 +1,187 @@
+@import 'variables';
+@import 'mixins';
+@import 'base';
+@import 'layout';
+
+/*header strat*/
+
+#return-to-top {
+    @include arrow;
+    #i {
+        @include icon;
+    }
+    &:hover {
+        #i {
+            color: #fff;
+            top: 5px;
+        }
+    }
+}
+
+
+/*nav bar*/
+
+header {
+    @include header;
+    .bg-light {
+        box-shadow: 0 4px 2px -2px rgba(204, 204, 204, 0.5);
+    }
+}
+
+.active {
+    @include active;
+    cursor: pointer;
+    @include smooth(.5s);
+    &:hover {
+        background: $blue;
+    }
+}
+
+//end header
+.courses {
+    margin: 40px 0;
+    form {
+        .active {
+            @include active;
+            background: $blue;
+            cursor: pointer;
+            @include smooth(.5s);
+            &:hover {
+                background: $red;
+            }
+        }
+        button {
+            float: left;
+        }
+        .form-group {
+            width: 55%;
+            background-color: #ededed;
+            border-radius: 10px;
+            input {
+                background: #ededed;
+                border-radius: 10px;
+                float: left;
+                margin-left: -90px;
+            }
+        }
+    }
+    @include accordion;
+    .content {
+        @include backrgound-image('../imgaes/favicon/2.jpg');
+        border-radius: 5px;
+        margin: 10px 0;
+        margin-bottom: 0px;
+        overflow: auto;
+        position: relative;
+        &::before {
+            content: "";
+            position: absolute;
+            left: 0;
+            right: 0;
+            top: 0;
+            bottom: 0;
+            @include linear-gradient-top(rgba(52, 128, 227, 0.1), #3480E3);
+        }
+        .overlay {
+            position: relative;
+            z-index: 100;
+            ul {
+                width: 100%;
+                padding: 0;
+                li {
+                    float: left;
+                    width: 100%;
+                    color: #fff;
+                    text-align: center;
+                    .fspan {
+                        padding: 5px;
+                        margin-bottom: 5px;
+                        position: relative;
+                        top: -10px;
+                        text-align: none;
+                        float: right;
+                    }
+                    h6 {
+                        font-size: 18px;
+                        font-weight: 600;
+                        margin: 15px 0;
+                        padding: 0 15px;
+                        color: #fff;
+                        text-align: center;
+                    }
+                    span {
+                        margin: 0 10px;
+                    }
+                    .r {
+                        background: #fff;
+                        border-color: $red;
+                        color: $red;
+                    }
+                    .b {
+                        background: #fff;
+                        border-color: $blue;
+                        color: $blue;
+                    }
+                    button {
+                        width: 35%;
+                        margin: 10px 0;
+                    }
+                }
+            }
+        }
+    }
+}
+
+//footer
+footer {
+    @include footer;
+}
+
+//End footer
+// Extra large devices (large desktops, 1200px and up)
+@media (min-width: 1200px) {
+    .x {
+        page-break-after: 0;
+    }
+}
+
+// Large devices (desktops, 992px and up)
+@media (min-width: 992px) and(max-width:1024px) {
+    .courses form .form-group input {
+        margin-left: 0;
+    }
+}
+
+// Medium devices (tablets, 768px and up)
+@media (min-width: 768px) and (max-width:992px) {
+    .courses form .form-group input {
+        margin-left: 0;
+    }
+    .overlay button {
+        width: 40%;
+        padding: 5px 15px;
+    }
+}
+
+// Small devices (landscape phones, 576px and up)
+@media (min-width: 576px) {
+    .x {
+        page-break-after: 0;
+    }
+}
+
+@media (max-width: 480px) {
+    h4 {
+        text-align: center;
+    }
+    .courses form .form-group input {
+        background: #ededed;
+        border-radius: 20px;
+        float: right;
+        /* margin-left: 11px; */
+        width: 95%;
+        padding: 8px 30px;
+    }
+}
+
+@include footerMedia;
