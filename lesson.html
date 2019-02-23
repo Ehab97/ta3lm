@@ -34,7 +34,7 @@
                             </a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="contactus.html">التواصل معانا</a>
+                            <a class="nav-link" href="contact-us.html">التواصل معانا</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="Lesson.html" style="color: #E53167 !important;">الدرس</a>
@@ -76,20 +76,20 @@
         </div>
     </header>
     <!-- End header -->
-    <section class="lesson">
+    <section class="lesson" id="app">
         <div class="container-fluid">
             <div class="row">
                 <div class="col-md-2">
                     <div class="arrow">
                         <ul class="list-unstyled">
-                            <li class="v2">
+                            <li class="v2" @click="l1=true;l2=false;l3=false">
                                 <i class="fa fa-video-camera" aria-hidden="true"></i>
                                 <span>شاهد الدرس</span></li>
-                            <li class="i2">
+                            <li class="i2" @click="l2=true;l1=false;l3=false">
                                 <i class="fa fa-book" aria-hidden="true"></i>
                                 <span>
                                     اقرا الدرس</span></li>
-                            <li class="q2">
+                            <li class="q2" @click="l3=true;l1=false;l2=false;">
                                 <i class="fa fa-question" aria-hidden="true"></i>
                                 <span>
                                     اجب على الاسئله</span></li>
@@ -98,9 +98,9 @@
                 </div>
                 <div class="col-md-10">
                     <div class="content text-center">
-                        <div class="video" id="v">
+                        <div class="video" v-show="l1">
                             <video controls="controls">
-                                <source src="movie.mp4" type="video/mp4">
+                                <source src="videos/movie.mp4" type="video/mp4">
                                 <source src="movie.ogg" type="video/ogg">
                                 Your browser does not support the video tag.
                             </video>
@@ -117,10 +117,10 @@
                                 <input type="radio" id="starhalf" name="rating" value="half" /><label class="half" for="starhalf" title="Sucks big time - 0.5 stars"></label>
                             </fieldset>
                         </div>
-                        <div class="read" id="i">
-                            <embed src="pdfs/part_1" type="application/pdf" />
+                        <div class="read"  v-show="l2">
+                            <embed src="pdfs/part_1.pdf" type="application/pdf" />
                         </div>
-                        <div class="questions text-center" id="q">
+                        <div class="questions text-center"  v-show="l3">
 
                             <h3>عنوان الاختبار</h3>
                             <h2 class="float-right" style="margin:20px 0;">صح ام خطا ؟</h2>
@@ -293,7 +293,7 @@
     <a href="javascript:" id="return-to-top"><i class="fa fa-arrow-up icon-chevron-up" id="i"></i></a>
     <!-- End footer -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-    <script src="js/jquery-3.1.1.min.js"></script>
+    <script  src="js/jquery-3.1.1.min.js"></script>
     <script src="js/jquery-ui.min.js"></script>
     <script src="js/popper.min.js"></script>
     <script src="js/bootstrap.min.js"></script>

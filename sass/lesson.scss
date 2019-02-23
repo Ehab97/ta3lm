@@ -2,7 +2,7 @@
 @import 'mixins';
 @import 'base';
 @import 'layout';
-@import url(//netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css);
+//@import url(//netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css);
 
 /*header strat*/
 
@@ -53,7 +53,7 @@ header {
     .content {
         display: block;
         padding: 30px 0;
-        #v {
+        .video {
             video {
                 width: 90%;
                 height: auto;
@@ -107,10 +107,12 @@ header {
             /***** CSS Magic to Highlight Stars on Hover *****/
             /* hover previous stars in list */
         }
-        .read embed {
-            width: 85%;
-            height: 700px;
-            display: none;
+        .read {
+            display: block;
+            embed {
+                width: 85%;
+                height: 700px;
+            }
         }
         .questions {
             padding: 25px 15px;
@@ -118,7 +120,7 @@ header {
             border-radius: 10px;
             width: 85%;
             margin: 0 auto;
-            display: none;
+
             -webkit-background-color: rgba(52, 128, 227, 0.1);
             -o-background-color: rgba(52, 128, 227, 0.1);
             -moz-background-color: rgba(52, 128, 227, 0.1);

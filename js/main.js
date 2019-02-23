@@ -1,6 +1,9 @@
-$(document).ready(function() {
+//document.addEventListener("DOMContentLoaded",func(){};
+//$(document).ready(func(){});
+document.addEventListener("DOMContentLoaded",function() {
     'use strict';
-
+    const theTimer=document.getElementById('count');
+    var timer = [0, 0, 0, 0];
     var highestBox = 0;
     $('.how-to-use .l').each(function() {
         if ($(this).height() > highestBox) {
@@ -30,59 +33,48 @@ $(document).ready(function() {
     });
 
     //lesson side bar
-    $('.lesson .arrow .v2').click(function() {
-        $('.lesson .content .video').css({ "display": "block" });
-        $('.lesson .content .read').css({ "display": "none" });
-        $('.lesson .content .questions').css({ "display": "none" });
-
-    });
-    $('.lesson .arrow .i2').click(function() {
-        $('.lesson .content .read').css({ "display": "block" });
-        $('.lesson .content .video').css({ "display": "none" });
-        $('.lesson .content .questions').css({ "display": "none" });
-
-    });
-    $('.lesson .arrow .q2').click(function() {
-        $('.lesson .content .questions').css({ "display": "block" });
-        $('.lesson .content .read').css({ "display": "none" });
-        $('.lesson .content .video').css({ "display": "none" });
-
-    });
-    //end function lesson side bar
-    //timer
-    // Set the date we're counting down to
-    var countDownDate = new Date("Jan 5, 2019 15:37:25").getTime();
-
-    // Update the count down every 1 second
-    var x = setInterval(function() {
-
-        // Get todays date and time
-        var now = new Date().getTime();
-
-        // Find the distance between now and the count down date
-        var distance = countDownDate - now;
-
-        // Time calculations for days, hours, minutes and seconds
-
-        var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
-        var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
-        var seconds = Math.floor((distance % (1000 * 60)) / 1000);
-
-        // Display the result in the element with id="demo"
-        document.getElementById("count").innerHTML = 1 + "h " +
-            minutes + "m " + seconds + "s ";
-
-        // If the count down is finished, write some text 
-        if (distance < 0) {
-            clearInterval(x);
-            document.getElementById("count").innerHTML = "EXPIRED";
+    // $('.lesson .arrow .v2').click(function() {
+    //     $('.lesson .content .video').css({ "display": "block" });
+    //     $('.lesson .content .read').css({ "display": "none" });
+    //     $('.lesson .content .questions').css({ "display": "none" });
+    //
+    // });
+    // $('.lesson .arrow .i2').click(function() {
+    //     $('.lesson .content .read').css({ "display": "block" });
+    //     $('.lesson .content .video').css({ "display": "none" });
+    //     $('.lesson .content .questions').css({ "display": "none" });
+    //
+    // });
+    // $('.lesson .arrow .q2').click(function() {
+    //     $('.lesson .content .questions').css({ "display": "block" });
+    //     $('.lesson .content .read').css({ "display": "none" });
+    //     $('.lesson .content .video').css({ "display": "none" });
+    //
+    // });
+    //Timer
+    function leadingZero(time) {
+        if (time < 9) {
+            time = '0' + time;
         }
-    }, 1000);
+        return time;
+    }
+    function runTimer() {
+        let currentTime = leadingZero(timer[0]) + ':' + leadingZero(timer[1]) + ':' + leadingZero(timer[2]);
+        theTimer.innerHTML = currentTime;
+        timer[3]++;
+
+        timer[0] = Math.floor((timer[3] / 100) / 60);
+        timer[1] = Math.floor((timer[3] / 100) - (timer[0] * 60));
+        timer[2] = Math.floor(timer[3] - (timer[1] * 100) - (timer[0] * 6000));
+    }
+    setInterval(runTimer, 10);
+
+
     //accordian of tests of profile
 
 
     //vue js
-    VueCode();
+    //VueCode();
 
     $('.custom-file-input').on('change', function() {
         let fileName = $(this).val().split('\\').pop();
@@ -96,7 +88,7 @@ var offset = 300,
     offsetOpacity = 1200,
     //duration of the top scrolling animation (in ms)
     scrollDuration = 700;
-var VueCode = new Vue({
+ new Vue({
     el: '#app',
     data: {
         color:'none',
@@ -123,7 +115,10 @@ var VueCode = new Vue({
         f3: false,
         f4: false,
         msq: true,
-        tf: false
+        tf: false,
+        l1:true,
+        l2:false,
+        l3:false
 
 
     },

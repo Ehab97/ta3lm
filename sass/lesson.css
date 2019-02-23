@@ -1,7 +1,6 @@
 @charset "UTF-8";
 @import "https://fonts.googleapis.com/css?family=Cairo";
 @import "https://fonts.googleapis.com/css?family=Cairo|Tajawal";
-@import url(//netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css);
 body {
   direction: rtl;
   font-family: 'Cairo', 'Tajawal', sans-serif; }
@@ -84,7 +83,7 @@ header .overlay {
   -o-transition: 0.5s ease-out;
   transition: 0.5s ease-out;
   position: absolute;
-  bottom: 3px;
+  bottom: 40px;
   left: 42%;
   cursor: pointer; }
   .active:hover {
@@ -108,54 +107,54 @@ header .overlay {
 .lesson .content {
   display: block;
   padding: 30px 0; }
-  .lesson .content #v {
+  .lesson .content .video {
     /***** CSS Magic to Highlight Stars on Hover *****/
     /* hover previous stars in list */ }
-    .lesson .content #v video {
+    .lesson .content .video video {
       width: 90%;
       height: auto;
       display: block;
       margin: 0 auto; }
-    .lesson .content #v .rating {
+    .lesson .content .video .rating {
       border: none;
       text-align: center;
       margin: 0 auto;
       margin-top: 20px;
       width: 25%; }
-      .lesson .content #v .rating > input {
+      .lesson .content .video .rating > input {
         display: none; }
-      .lesson .content #v .rating > label:before {
+      .lesson .content .video .rating > label:before {
         margin: 5px;
         font-size: 1.25em;
         font-family: FontAwesome;
         display: inline-block;
         content: "\f005"; }
-      .lesson .content #v .rating > label {
+      .lesson .content .video .rating > label {
         color: #ddd;
         float: right; }
-      .lesson .content #v .rating > input:checked ~ label {
+      .lesson .content .video .rating > input:checked ~ label {
         color: #FFD700; }
-      .lesson .content #v .rating:not(:checked) > label:hover {
+      .lesson .content .video .rating:not(:checked) > label:hover {
         color: #FFD700; }
-        .lesson .content #v .rating:not(:checked) > label:hover ~ label {
+        .lesson .content .video .rating:not(:checked) > label:hover ~ label {
           color: #FFD700; }
-      .lesson .content #v .rating > input:checked + label:hover,
-      .lesson .content #v .rating > input:checked ~ label:hover {
+      .lesson .content .video .rating > input:checked + label:hover,
+      .lesson .content .video .rating > input:checked ~ label:hover {
         color: #FFED85; }
-      .lesson .content #v .rating > label:hover ~ input:checked ~ label,
-      .lesson .content #v .rating > input:checked ~ label:hover ~ label {
+      .lesson .content .video .rating > label:hover ~ input:checked ~ label,
+      .lesson .content .video .rating > input:checked ~ label:hover ~ label {
         color: #FFED85; }
-  .lesson .content .read embed {
-    width: 85%;
-    height: 700px;
-    display: none; }
+  .lesson .content .read {
+    display: block; }
+    .lesson .content .read embed {
+      width: 85%;
+      height: 700px; }
   .lesson .content .questions {
     padding: 25px 15px;
     margin: 0 auto;
     border-radius: 10px;
     width: 85%;
     margin: 0 auto;
-    display: none;
     -webkit-background-color: rgba(52, 128, 227, 0.1);
     -o-background-color: rgba(52, 128, 227, 0.1);
     -moz-background-color: rgba(52, 128, 227, 0.1);
@@ -163,7 +162,7 @@ header .overlay {
     -webkit-contain: content;
     -o-contain: content;
     -moz-contain: content;
-    contain: content; }
+    overflow: auto; }
     .lesson .content .questions h3,
     .lesson .content .questions h2 {
       color: #3480E3; }
@@ -303,6 +302,44 @@ footer {
         transform: scale(1.1);
         transition: all 0.6s ease-in-out; }
 
+#return-to-top {
+  text-align: center;
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background: black;
+  background: rgba(0, 0, 0, 0.7);
+  width: 50px;
+  height: 50px;
+  display: block;
+  text-decoration: none;
+  -webkit-border-radius: 35px;
+  -moz-border-radius: 35px;
+  border-radius: 35px;
+  display: none;
+  -webkit-transition: all 0.3s linear;
+  -moz-transition: all 0.3s ease;
+  -ms-transition: all 0.3s ease;
+  -o-transition: all 0.3s ease;
+  transition: all 0.3s ease; }
+  #return-to-top:hover {
+    background: #3480E3; }
+  #return-to-top #i {
+    color: #fff;
+    margin: 0;
+    position: relative;
+    left: 0px;
+    top: 15px;
+    font-size: 20px;
+    -webkit-transition: all 0.3s ease;
+    -moz-transition: all 0.3s ease;
+    -ms-transition: all 0.3s ease;
+    -o-transition: all 0.3s ease;
+    transition: all 0.3s ease; }
+  #return-to-top:hover #i {
+    color: #fff;
+    top: 5px; }
+
 @media (min-width: 1200px) {
   .x {
     page-break-after: 0; } }
@@ -312,7 +349,10 @@ footer {
 @media (min-width: 768px) and (max-width: 992px) {
   .lesson .col-md-2 .arrow li {
     margin-bottom: 15px;
-    font-size: 13px; } }
+    font-size: 13px; }
+
+  .active {
+    left: 36%; } }
 @media (min-width: 576px) {
   .x {
     page-break-after: 0; } }
@@ -327,6 +367,9 @@ footer {
         margin: 0 10px; }
         footer .soical-icon li i {
           text-align: center; }
+
+  .active {
+    left: 30%; }
 
   .lesson .content #v video {
     width: 100%;

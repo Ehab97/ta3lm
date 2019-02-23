@@ -1,7 +1,6 @@
 @charset "UTF-8";
 @import "https://fonts.googleapis.com/css?family=Cairo";
 @import "https://fonts.googleapis.com/css?family=Cairo|Tajawal";
-@import url(//netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css);
 body {
   direction: rtl;
   font-family: 'Cairo', 'Tajawal', sans-serif; }
@@ -129,54 +128,54 @@ header .overlay {
 .lesson .content {
   display: block;
   padding: 30px 0; }
-  .lesson .content #v {
+  .lesson .content .video {
     /***** CSS Magic to Highlight Stars on Hover *****/
     /* hover previous stars in list */ }
-    .lesson .content #v video {
+    .lesson .content .video video {
       width: 90%;
       height: auto;
       display: block;
       margin: 0 auto; }
-    .lesson .content #v .rating {
+    .lesson .content .video .rating {
       border: none;
       text-align: center;
       margin: 0 auto;
       margin-top: 20px;
       width: 25%; }
-      .lesson .content #v .rating > input {
+      .lesson .content .video .rating > input {
         display: none; }
-      .lesson .content #v .rating > label:before {
+      .lesson .content .video .rating > label:before {
         margin: 5px;
         font-size: 1.25em;
         font-family: FontAwesome;
         display: inline-block;
         content: "\f005"; }
-      .lesson .content #v .rating > label {
+      .lesson .content .video .rating > label {
         color: #ddd;
         float: right; }
-      .lesson .content #v .rating > input:checked ~ label {
+      .lesson .content .video .rating > input:checked ~ label {
         color: #FFD700; }
-      .lesson .content #v .rating:not(:checked) > label:hover {
+      .lesson .content .video .rating:not(:checked) > label:hover {
         color: #FFD700; }
-        .lesson .content #v .rating:not(:checked) > label:hover ~ label {
+        .lesson .content .video .rating:not(:checked) > label:hover ~ label {
           color: #FFD700; }
-      .lesson .content #v .rating > input:checked + label:hover,
-      .lesson .content #v .rating > input:checked ~ label:hover {
+      .lesson .content .video .rating > input:checked + label:hover,
+      .lesson .content .video .rating > input:checked ~ label:hover {
         color: #FFED85; }
-      .lesson .content #v .rating > label:hover ~ input:checked ~ label,
-      .lesson .content #v .rating > input:checked ~ label:hover ~ label {
+      .lesson .content .video .rating > label:hover ~ input:checked ~ label,
+      .lesson .content .video .rating > input:checked ~ label:hover ~ label {
         color: #FFED85; }
-  .lesson .content .read embed {
-    width: 85%;
-    height: 700px;
-    display: none; }
+  .lesson .content .read {
+    display: block; }
+    .lesson .content .read embed {
+      width: 85%;
+      height: 700px; }
   .lesson .content .questions {
     padding: 25px 15px;
     margin: 0 auto;
     border-radius: 10px;
     width: 85%;
     margin: 0 auto;
-    display: none;
     -webkit-background-color: rgba(52, 128, 227, 0.1);
     -o-background-color: rgba(52, 128, 227, 0.1);
     -moz-background-color: rgba(52, 128, 227, 0.1);

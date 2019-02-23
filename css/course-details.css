@@ -202,7 +202,7 @@ header .overlay {
   box-shadow: 0 0 25px 0 rgba(204, 204, 204, 0.5);
   padding: 0;
   margin: 40px 0;
-  overflow: auto; }
+  overflow: hidden; }
   .courses .intro img {
     width: 30%;
     float: right;
@@ -215,7 +215,7 @@ header .overlay {
     padding: 15px 20px 0 20px; }
     .courses .intro .cont .head {
       width: 100%;
-      overflow: auto; }
+      overflow: hidden; }
       .courses .intro .cont .head h6 {
         float: right; }
       .courses .intro .cont .head .star {
@@ -225,7 +225,7 @@ header .overlay {
     .courses .intro .cont .body {
       color: #777;
       width: 100%;
-      overflow: auto; }
+      overflow: hidden; }
       .courses .intro .cont .body .right {
         float: right;
         width: 70%; }
@@ -253,10 +253,12 @@ header .overlay {
   -webkit-box-shadow: 0 0 25px 0 rgba(204, 204, 204, 0.5);
   box-shadow: 0 0 25px 0 rgba(204, 204, 204, 0.5);
   padding: 0;
-  margin: 40px 0; }
+  margin: 40px 0;
+  overflow: auto; }
   .courses .body-lg .head-lg {
     min-width: 100%;
-    margin-right: -40px; }
+    margin-right: -40px;
+    margin-top: -16px; }
     .courses .body-lg .head-lg ul {
       min-width: 100%; }
       .courses .body-lg .head-lg ul li {
@@ -430,7 +432,9 @@ footer {
 
 @media (min-width: 992px) and (max-width: 1200px) {
   .courses .intro img {
-    height: 230px; } }
+    height: 230px; }
+  .courses .body-lg .head-lg {
+    margin-top: -16px; } }
 
 @media (min-width: 768px) and (max-width: 992px) {
   .courses .intro .cont .body .right p {
@@ -448,11 +452,15 @@ footer {
     width: 55%; }
   .courses .instrctor .pic img {
     height: 120px;
-    width: 120px; } }
+    width: 120px; }
+  .courses .body-lg .head-lg {
+    margin-top: -16px; } }
 
 @media (min-width: 576px) {
   .x {
-    page-break-after: 0; } }
+    page-break-after: 0; }
+  .courses .body-lg .head-lg {
+    margin-top: -16px; } }
 
 @media (max-width: 480px) {
   footer {
@@ -465,6 +473,8 @@ footer {
         margin: 0 10px; }
         footer .soical-icon li i {
           text-align: center; }
+  .courses .body-lg .head-lg {
+    margin-top: -16px; }
   .courses .intro img {
     width: 0;
     display: none; }
