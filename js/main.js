@@ -1,10 +1,18 @@
 //document.addEventListener("DOMContentLoaded",func(){};
 //$(document).ready(func(){});
-document.addEventListener("DOMContentLoaded",function() {
+document.addEventListener("DOMContentLoaded", function() {
     'use strict';
-    const theTimer=document.getElementById('count');
+    //gobla varibales definations 
+    const theTimer = document.getElementById('count');
     var timer = [0, 0, 0, 0];
     var highestBox = 0;
+    //browser window scroll (in pixels) after which the "back to top" link is shown
+    var offset = 300;
+    //browser window scroll (in pixels) after which the "back to top" link opacity is reduced 
+    var offsetOpacity = 1200;
+    //duration of the top scrolling animation (in ms)
+    var scrollDuration = 700;
+    //how to use section Edition
     $('.how-to-use .l').each(function() {
         if ($(this).height() > highestBox) {
             highestBox = $(this).height();
@@ -32,25 +40,6 @@ document.addEventListener("DOMContentLoaded",function() {
         }, 500);
     });
 
-    //lesson side bar
-    // $('.lesson .arrow .v2').click(function() {
-    //     $('.lesson .content .video').css({ "display": "block" });
-    //     $('.lesson .content .read').css({ "display": "none" });
-    //     $('.lesson .content .questions').css({ "display": "none" });
-    //
-    // });
-    // $('.lesson .arrow .i2').click(function() {
-    //     $('.lesson .content .read').css({ "display": "block" });
-    //     $('.lesson .content .video').css({ "display": "none" });
-    //     $('.lesson .content .questions').css({ "display": "none" });
-    //
-    // });
-    // $('.lesson .arrow .q2').click(function() {
-    //     $('.lesson .content .questions').css({ "display": "block" });
-    //     $('.lesson .content .read').css({ "display": "none" });
-    //     $('.lesson .content .video').css({ "display": "none" });
-    //
-    // });
     //Timer
     function leadingZero(time) {
         if (time < 9) {
@@ -58,6 +47,7 @@ document.addEventListener("DOMContentLoaded",function() {
         }
         return time;
     }
+
     function runTimer() {
         let currentTime = leadingZero(timer[0]) + ':' + leadingZero(timer[1]) + ':' + leadingZero(timer[2]);
         theTimer.innerHTML = currentTime;
@@ -82,16 +72,11 @@ document.addEventListener("DOMContentLoaded",function() {
     });
 
 });
-//browser window scroll (in pixels) after which the "back to top" link is shown
-var offset = 300,
-    //browser window scroll (in pixels) after which the "back to top" link opacity is reduced 
-    offsetOpacity = 1200,
-    //duration of the top scrolling animation (in ms)
-    scrollDuration = 700;
- new Vue({
+
+new Vue({
     el: '#app',
     data: {
-        color:'none',
+        color: 'none',
         o: true,
         o2: true,
         o3: true,
@@ -116,19 +101,17 @@ var offset = 300,
         f4: false,
         msq: true,
         tf: false,
-        l1:true,
-        l2:false,
-        l3:false
-
-
+        l1: true,
+        l2: false,
+        l3: false
     },
     methods: {
         open: function(arg) {
-            return arg = !arg
+            return arg = !arg;
         }
     },
     computed: {
-        change:function(){
+        change: function() {
             return this.color;
         }
     }
