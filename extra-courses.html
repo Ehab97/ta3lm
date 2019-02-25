@@ -42,18 +42,17 @@
                         <li class="nav-item">
                             <a class="nav-link" href="extra-courses.html" style="color: #E53167 !important;">الكورسات الاضافيه</a>
                         </li>
-                        <li class="nav-item dropdown" href="profile.html" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                            <!-- <a class="nav-link" href="profile.html" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> -->
-
-                            <div class="pic">
-                                <img src="imgaes/child/pexels-photo-261895.jpeg" alt="child" style="border: #E53167 !important;">
-                            </div>
-                            <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-                                <a class="dropdown-item" href="profile.html">الصفحه</a>
-                                <a class="dropdown-item" href="#">خروج</a>
-                                <a class="dropdown-item" href="#">شئ اخر</a>
-                            </div>
-                            <!-- </a> -->
+                        <li class="nav-item dropdown">
+                            <a class="nav-link" href="profile.html" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                <div class="pic">
+                                    <img src="imgaes/child/pexels-photo-261895.jpeg" alt="child" style="border: #E53167 !important;">
+                                </div>
+                                <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                                    <a class="dropdown-item" href="profile.html">الصفحه الشخصيه</a>
+                                    <a class="dropdown-item" href="#">شئ اخر</a>
+                                    <a class="dropdown-item" href="#">شئ اخر</a>
+                                </div>
+                            </a>
                         </li>
                     </ul>
                 </div>
@@ -87,8 +86,7 @@
                     <div class="col-sm-12">
                         <ul class="list-unstyled">
                             <li @click="o=true;o2=true;o3=true;o4=true;o5=true;o6=true;o7=true;
-                                change()"
-                                :style="color" ><span>الكل</span></li>
+                                change()" :style="color"><span>الكل</span></li>
                             <li @click="o=false;o2=true;o3=false;o4=false;o5=false;o6=false;o7=false"><span>ويب</span></li>
                             <li @click="o=false;o2=false;o3=true;o4=false;o5=false;o6=false;o7=false"><span>تطوير</span></li>
                             <li @click="o=false;o2=false;o3=false;o4=true;o5=false;o6=false;o7=false"><span>تصميم</span></li>
