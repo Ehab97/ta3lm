@@ -2,7 +2,7 @@
 //$(document).ready(func(){});
 document.addEventListener("DOMContentLoaded", function() {
     'use strict';
-    //gobla varibales definations 
+    //global variables  definations
     const theTimer = document.getElementById('count');
     var timer = [0, 0, 0, 0];
     var highestBox = 0;
@@ -103,18 +103,18 @@ new Vue({
         tf: false,
         l1: true,
         l2: false,
-        l3: false
+        l3: false,
+        isOn:true
     },
     methods: {
         open: function(arg) {
             return arg = !arg;
+        },
+        change: function() {
+            return this.isOn = !isOn;
         }
     },
-    computed: {
-        change: function() {
-            return this.color;
-        }
-    }
+
 });
 $(function() {
     $("#accordion").accordion();
