@@ -4,6 +4,17 @@
         @import 'layout';
         /*header strat*/
         
+        .liColor {
+            font-size: 18px;
+            font-weight: 600;
+            width: 33.3333333333333333%;
+            padding: 25px;
+            cursor: pointer;
+            border: none;
+            border-bottom: 2px solid $red;
+            background: #3480e329;
+        }
+        
         #return-to-top {
             @include arrow;
             #i {
@@ -365,7 +376,6 @@
             .x {
                 page-break-after: 0;
             }
-
         }
         
         // Large devices (desktops, 992px and up)
@@ -374,10 +384,9 @@
             .courses .intro img {
                 height: 230px;
             }
-            .courses .body-lg .head-lg{
+            .courses .body-lg .head-lg {
                 margin-top: -16px;
             }
-
         }
         
         // Medium devices (tablets, 768px and up)
@@ -405,7 +414,7 @@
                 height: 120px;
                 width: 120px;
             }
-            .courses .body-lg .head-lg{
+            .courses .body-lg .head-lg {
                 margin-top: -16px;
             }
         }
@@ -415,7 +424,7 @@
             .x {
                 page-break-after: 0;
             }
-            .courses .body-lg .head-lg{
+            .courses .body-lg .head-lg {
                 margin-top: -16px;
             }
         }
@@ -436,7 +445,7 @@
                     }
                 }
             }
-            .courses .body-lg .head-lg{
+            .courses .body-lg .head-lg {
                 margin-top: -16px;
             }
             .courses .intro img {

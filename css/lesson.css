@@ -109,6 +109,9 @@ header .overlay {
   .active:hover {
     background-color: #3480E3; }
 
+.activeli {
+  color: #3480E3; }
+
 .lesson .col-md-2 {
   background-color: rgba(52, 128, 227, 0.1); }
   .lesson .col-md-2 .arrow {
@@ -116,7 +119,7 @@ header .overlay {
     .lesson .col-md-2 .arrow li {
       margin-bottom: 15px;
       font-size: 18px; }
-      .lesson .col-md-2 .arrow li li i {
+      .lesson .col-md-2 .arrow li i {
         margin-left: 15px; }
       .lesson .col-md-2 .arrow li:hover {
         cursor: pointer;

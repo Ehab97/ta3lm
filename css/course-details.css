@@ -9,6 +9,16 @@ body {
     background-color: #3480E3; } }
 
 /*header strat*/
+.liColor {
+  font-size: 18px;
+  font-weight: 600;
+  width: 33.3333333333333333%;
+  padding: 25px;
+  cursor: pointer;
+  border: none;
+  border-bottom: 2px solid #E53167;
+  background: #3480e329; }
+
 #return-to-top {
   text-align: center;
   position: fixed;

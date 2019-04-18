@@ -31,6 +31,10 @@ header {
     }
 }
 
+.activeli {
+    color: #3480E3;
+}
+
 //start Lesson
 .lesson {
     .col-md-2 {
@@ -40,7 +44,7 @@ header {
             li {
                 margin-bottom: 15px;
                 font-size: 18px;
-                li i {
+                i {
                     margin-left: 15px;
                 }
                 &:hover {
@@ -120,7 +124,6 @@ header {
             border-radius: 10px;
             width: 85%;
             margin: 0 auto;
-
             -webkit-background-color: rgba(52, 128, 227, 0.1);
             -o-background-color: rgba(52, 128, 227, 0.1);
             -moz-background-color: rgba(52, 128, 227, 0.1);
