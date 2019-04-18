@@ -175,6 +175,14 @@ header .content {
         border: none;
         border-bottom: 2px solid #E53167;
         background: #3480e329; }
+  .content .activeTap {
+    padding: 15px 40px;
+    margin: 0 auto;
+    text-align: center;
+    cursor: pointer;
+    border: none;
+    border-bottom: 2px solid #E53167;
+    background: #3480e329; }
   .content .cont {
     margin-top: 55px;
     padding: 50px 0; }

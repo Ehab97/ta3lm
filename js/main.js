@@ -7,6 +7,7 @@ document.addEventListener("DOMContentLoaded", function() {
     var liColor = document.querySelectorAll('.lesson .arrow li');
     var howUse = document.querySelector('.how-to-use .l');
     var courseDrtailsColor = document.querySelectorAll('.body-lg .head-lg li');
+    var tabColor = document.querySelectorAll('.content #nav li');
     var timer = [0, 0, 0, 0];
     var highestBox = 0;
     //browser window scroll (in pixels) after which the "back to top" link is shown
@@ -16,6 +17,21 @@ document.addEventListener("DOMContentLoaded", function() {
     //duration of the top scrolling animation (in ms)
     var scrollDuration = 700;
     //chang color links
+    var ChangeTapColor = function() {
+        for (let i = 0; i < tabColor.length; ++i) {
+            tabColor[i].onclick = () => {
+                var c = 0;
+                while (c < tabColor.length) {
+                    // tabColor[c].classList.contains('activeTap') ? tabColor.classList.remove('activeTap') : '';
+                    if (tabColor[c].classList.contains('activeTap')) {
+                        tabColor[c].classList.remove('activeTap');
+                    }
+                    c++;
+                }
+                tabColor[i].classList.add('activeTap');
+            }
+        }
+    }
     var changeColor = function() {
         for (let i = 0; i < liColor.length; ++i) {
             liColor[i].onclick = () => {
@@ -46,28 +62,21 @@ document.addEventListener("DOMContentLoaded", function() {
     }
     changeColorCourse();
     changeColor();
+    ChangeTapColor();
     //how to use section Edition
     // $('.how-to-use .l')
     $('.how-to-use .l').each(function() {
-        if ($(this).height() > highestBox) {
-            highestBox = $(this).height();
-        }
+        $(this).height() > highestBox ? highestBox = $(this).height() : '';
     });
     $('.how-to-use .v').height(highestBox);
     var h2 = 0;
     $('.how-to-use .l').each(function() {
-        if ($(this).height() > highestBox) {
-            highestBox = $(this).height();
-        }
+        $(this).height() > highestBox ? highestBox = $(this).height() : '';
     });
     $('.how-to-use .v video').height(highestBox);
     // ===== Scroll to Top ==== 
     $(window).scroll(function() {
-        if ($(this).scrollTop() >= 50) { // If page is scrolled more than 50px
-            $('#return-to-top').fadeIn(200); // Fade in the arrow
-        } else {
-            $('#return-to-top').fadeOut(200); // Else fade out the arrow
-        }
+        $(this).scrollTop() >= 50 ? $('#return-to-top').fadeIn(200) : $('#return-to-top').fadeOut(200);
     });
     $('#return-to-top').click(function() { // When arrow is clicked
         $('body,html').animate({
@@ -77,9 +86,10 @@ document.addEventListener("DOMContentLoaded", function() {
 
     //Timer
     function leadingZero(time) {
-        if (time < 9) {
-            time = '0' + time;
-        }
+        // if (time < 9) {
+        //     time = '0' + time;
+        // }
+        time < 9 ? time = '0' + time : '';
         return time;
     }
 
@@ -93,13 +103,6 @@ document.addEventListener("DOMContentLoaded", function() {
         timer[2] = Math.floor(timer[3] - (timer[1] * 100) - (timer[0] * 6000));
     }
     setInterval(runTimer, 10);
-
-
-    //accordian of tests of profile
-
-
-    //vue js
-    //VueCode();
 
     $('.custom-file-input').on('change', function() {
         let fileName = $(this).val().split('\\').pop();
