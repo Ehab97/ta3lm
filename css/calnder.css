@@ -42,4 +42,5 @@
     border: 1px solid #ffffff08;
     transition: opacity 2.5s;
     border-radius: 5px;
+    cursor: pointer;
 }
