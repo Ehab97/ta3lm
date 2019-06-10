@@ -1,0 +1,45 @@
+* {
+  box-sizing: border-box;
+}
+
+
+.calnder {
+    width: 100%;
+    height: 560px;
+    border: 0px solid black;
+    margin: 15px auto;
+    background-image: url("../imgaes/courses/green-chameleon-21532-unsplash.jpg");
+    background-size: cover;
+    box-shadow: 0px 0px 25px rgba(0, 0, 0, 0.15);
+    border-radius: 5px;
+    display: grid;
+    grid-template-columns: repeat(5, 20%);
+    grid-template-rows: repeat(7, 1fr);
+    grid-template-areas:
+        "door1 door2 door3 door4 door5"
+        "door6 door7 door8 door9 door10 "
+        "door11 door12 door13 door14 door15"
+        "door16 door17 door18 door19 door20"
+        "door21 door22 door23 door24 door25"
+        "door26 door27 door28 door29 door30"
+        "door31 door32 door33 door34 door35";
+        /* "door17 door10 door24 door21"
+        "door8 door18 door4 door13"
+        "door25 door26 door27 door28"; */
+}
+
+.image {
+    background-image: none;
+    background-size: cover;
+    background-position: center;
+}
+
+.text {
+    height: 100%;
+    width: 100%;
+    color: white;
+    padding: 10px;
+    border: 1px solid #ffffff08;
+    transition: opacity 2.5s;
+    border-radius: 5px;
+}
