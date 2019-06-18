@@ -93,6 +93,7 @@ header .intro {
     -o-background-size: cover;
     -moz-background-size: cover;
     background-size: cover;
+    margin-top: 87px;
 }
 
 header .overlay {
