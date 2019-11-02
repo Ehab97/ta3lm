@@ -85,8 +85,8 @@
             <div class="row">
                 <div class="col-sm-12">
                     <div class="content">
-                        <h1 class="text-center">
-                            EDU
+                        <h1 class="text-center" style="font-family: 'Tajawal', sans-serif !important;
+                        font-style: normal;"> تَعَلَّمْ
                         </h1>
                     </div>
                 </div>
@@ -119,7 +119,7 @@
                     <h2>خدماتنا</h2>
                 </div>
             </div>
-            <div class="row">
+            <div class="row text">
                 <div class="col-md-3" style="margin:0 auto;">
                     <div class="content" style="margin-top:40px;margin-bottom:40px;">
                         <img class="img-fluid" src="imgaes/favicon/extra-courses.png">
@@ -175,43 +175,25 @@
             </div>
         </div>
     </section>
-    <section class="team text-center">
+    <section class="team text-center" id="app">
         <div class="container">
             <div class="row">
                 <div class="col-sm-12">
                     <h2 class="h1">اعضاء فريقنا</h2>
                 </div>
             </div>
-            <div class="row">
-                <div class="col-md-3 col-sm-12">
-                    <div class="c">
-                        <div class="overlay"> احمد زويل
-                            <br>CEO
+            <div class="row text-center">
+
+                <div class="col-md-3 col-sm-12 m-auto" v-for="(i,j) in names">
+                    <div class="c" :style="{ backgroundImage: 'url(imgaes/about/' + images[j] + ')' }">
+                        <div class="overlay">
+                            {{names[j]}}
+                            <!-- <br>CEO -->
                         </div>
                     </div>
                 </div>
                 <!-- End col -->
-                <div class="col-md-3 col-sm-12">
-                    <div class="c">
-                        <div class="overlay"> احمد زويل
-                            <br>CEO</div>
-                    </div>
-                </div>
-                <!-- End col -->
-                <div class="col-md-3 col-sm-12">
-                    <div class="c">
-                        <div class="overlay"> احمد زويل
-                            <br>CEO</div>
-                    </div>
-                </div>
-                <!-- End col -->
-                <div class="col-md-3 col-sm-12">
-                    <div class="c">
-                        <div class="overlay"> احمد زويل
-                            <br>CEO</div>
-                    </div>
-                </div>
-                <!-- End col -->
+
             </div>
         </div>
     </section>

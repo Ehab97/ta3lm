@@ -142,7 +142,10 @@ new Vue({
         l1: true,
         l2: false,
         l3: false,
-        isOn: true
+        isOn: true,
+        names: ['Ehab Reda', 'Omnia Salah', 'Yasmeen Mahdy', 'Aya Esmail', 'Alshimaa Abdelaal'],
+        images: ['ehab.jpg', 'woman.png', 'woman.png', 'woman.png', 'woman.png'],
+        // pos:['Leader','Busimess']
     },
     methods: {
         open: function(arg) {
