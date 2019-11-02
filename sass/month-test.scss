@@ -27,14 +27,14 @@ header {
 //test
 .test {
     #count {
-        // position: relative;
         position: fixed;
         right: 0;
-        top: 5%;
+        top: 20%;
         background-color: rgba(52, 128, 227, 0.99);
         color: #fff;
         padding: 5px 30px;
         margin: 0;
+        z-index: 1006;
     }
     margin: 50px 0;
     width: 100%;

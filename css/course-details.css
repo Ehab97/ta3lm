@@ -149,210 +149,219 @@ header .overlay {
   transition: 0.5s ease-out;
   cursor: pointer; }
   .active:hover {
-    background-color: #3480E3; }
+    transition: .3s ease-in-out;
+    background-color: #bf2d59;
+    color: #fff; }
 
-.courses .details {
-  border-radius: 5px;
-  box-shadow: 0 0 25px 0 rgba(204, 204, 204, 0.5);
-  padding: 20px 5px;
-  padding-bottom: 0px;
-  margin: 40px 0;
-  margin-bottom: 20px;
-  overflow: auto; }
-  .courses .details ul {
-    width: 100%; }
-    .courses .details ul li {
-      float: left;
-      width: 100%;
-      border-bottom: 1px solid rgba(52, 128, 227, 0.1);
-      margin-left: 15px;
-      margin-bottom: 15px; }
-      .courses .details ul li p {
-        float: right;
-        width: 40%; }
-        .courses .details ul li p i {
-          margin-left: 10px;
-          text-align: justify; }
-      .courses .details ul li span {
-        width: 60%;
+.courses {
+  margin-top: 90px; }
+  .courses .details {
+    border-radius: 5px;
+    box-shadow: 0 0 25px 0 rgba(204, 204, 204, 0.5);
+    padding: 20px 5px;
+    padding-bottom: 0px;
+    margin: 40px 0;
+    margin-bottom: 20px;
+    overflow: auto; }
+    .courses .details ul {
+      width: 100%; }
+      .courses .details ul li {
         float: left;
-        text-align: center;
-        color: #777; }
-      .courses .details ul li:last-of-type {
-        border-bottom: none; }
-.courses .instrctor {
-  border-radius: 5px;
-  box-shadow: 0 0 25px 0 rgba(204, 204, 204, 0.5);
-  padding: 15px 10px;
-  margin-bottom: 40px; }
-  .courses .instrctor .pic img {
-    height: 150px;
-    width: 150px;
-    border-radius: 50%; }
-  .courses .instrctor h5 {
-    margin: 10px 0; }
-  .courses .instrctor p {
-    color: #777; }
-.courses .intro {
-  border-radius: 5px;
-  box-shadow: 0 0 25px 0 rgba(204, 204, 204, 0.5);
-  padding: 0;
-  margin: 40px 0;
-  overflow: hidden; }
-  .courses .intro img {
-    width: 30%;
-    float: right;
-    border-top-right-radius: 5px;
-    border-bottom-right-radius: 5px;
-    height: 200px; }
-  .courses .intro .cont {
-    float: left;
-    width: 70%;
-    padding: 15px 20px 0 20px; }
-    .courses .intro .cont .head {
-      width: 100%;
-      overflow: hidden; }
-      .courses .intro .cont .head h6 {
-        float: right; }
-      .courses .intro .cont .head .star {
-        float: left; }
-        .courses .intro .cont .head .star .stars .checked {
-          color: orange; }
-    .courses .intro .cont .body {
-      color: #777;
-      width: 100%;
-      overflow: hidden; }
-      .courses .intro .cont .body .right {
-        float: right;
-        width: 70%; }
-        .courses .intro .cont .body .right p {
-          font-size: 14px;
-          margin-bottom: 10px;
-          text-align: right; }
-        .courses .intro .cont .body .right a {
-          text-decoration: none;
+        width: 100%;
+        border-bottom: 1px solid rgba(52, 128, 227, 0.1);
+        margin-left: 15px;
+        margin-bottom: 15px; }
+        .courses .details ul li p {
+          float: right;
+          width: 40%; }
+          .courses .details ul li p i {
+            margin-left: 10px;
+            text-align: justify; }
+        .courses .details ul li span {
+          width: 60%;
+          float: left;
+          text-align: center;
           color: #777; }
-      .courses .intro .cont .body .left {
-        width: 30%;
-        float: left;
-        text-align: center;
-        padding: 5% 0;
-        padding-right: 30px; }
-    .courses .intro .cont .bottom {
-      width: 100%;
+        .courses .details ul li:last-of-type {
+          border-bottom: none; }
+  .courses .instrctor {
+    border-radius: 5px;
+    box-shadow: 0 0 25px 0 rgba(204, 204, 204, 0.5);
+    padding: 15px 10px;
+    margin-bottom: 40px; }
+    .courses .instrctor .pic img {
+      height: 150px;
+      width: 150px;
+      border-radius: 50%; }
+    .courses .instrctor h5 {
       margin: 10px 0; }
-      .courses .intro .cont .bottom .progress-bar {
-        background-color: #3480E3; }
-.courses .body-lg {
-  border-radius: 5px;
-  box-shadow: 0 0 25px 0 rgba(204, 204, 204, 0.5);
-  padding: 0;
-  margin: 40px 0;
-  overflow: auto; }
-  .courses .body-lg .head-lg {
-    min-width: 100%;
-    margin-right: -40px;
-    margin-top: -16px; }
-    .courses .body-lg .head-lg ul {
-      min-width: 100%; }
-      .courses .body-lg .head-lg ul li {
-        float: right;
-        font-size: 18px;
-        font-weight: 600;
-        width: 33.3333333333333333%;
-        padding: 25px;
-        cursor: pointer; }
-        .courses .body-lg .head-lg ul li i {
-          margin: 0 15px; }
-        .courses .body-lg .head-lg ul li:hover {
-          border: none;
-          border-bottom: 2px solid #E53167;
-          background: #3480e329; }
-  .courses .body-lg .body-sm {
-    padding: 10px 15px;
-    min-width: 100%; }
-    .courses .body-lg .body-sm .testmoi {
-      width: 100%;
-      margin: 15px 0;
-      text-align: center; }
-      .courses .body-lg .body-sm .testmoi h5 {
-        margin-bottom: 30px; }
-      .courses .body-lg .body-sm .testmoi .stars .checked {
-        color: orange; }
-      .courses .body-lg .body-sm .testmoi .card {
-        margin: 20px 0;
-        background-color: rgba(52, 128, 227, 0.1);
-        border: none;
-        color: #000; }
-        .courses .body-lg .body-sm .testmoi .card .pic img {
-          height: 70px;
-          width: 70px;
-          margin-top: -30px;
-          border-radius: 50%; }
-        .courses .body-lg .body-sm .testmoi .card .bod {
-          margin-top: 25px;
-          margin-bottom: 25px;
-          color: #000; }
-          .courses .body-lg .body-sm .testmoi .card .bod p {
-            font-size: 13px; }
-          .courses .body-lg .body-sm .testmoi .card .bod span {
-            color: #868E96;
-            font-weight: bold; }
-            .courses .body-lg .body-sm .testmoi .card .bod span i {
-              margin-right: 10px;
-              font-size: 14px;
-              font-weight: 100; }
-    .courses .body-lg .body-sm .rate-deatils {
-      width: 100%;
-      overflow: auto; }
-      .courses .body-lg .body-sm .rate-deatils .left {
-        float: left;
-        width: 40%;
-        padding: 10px 20px; }
-        .courses .body-lg .body-sm .rate-deatils .left .b {
-          text-align: center; }
-        .courses .body-lg .body-sm .rate-deatils .left .form-check {
-          float: left;
-          width: 100%;
-          margin-bottom: 20px; }
-          .courses .body-lg .body-sm .rate-deatils .left .form-check .form-check-label {
-            float: left; }
-            .courses .body-lg .body-sm .rate-deatils .left .form-check .form-check-label input[type=checkbox],
-            .courses .body-lg .body-sm .rate-deatils .left .form-check .form-check-label input[type=radio] {
-              margin: 0 0 0 10px; }
-        .courses .body-lg .body-sm .rate-deatils .left .form-group textarea {
-          background-color: #EDEDED; }
-      .courses .body-lg .body-sm .rate-deatils .right {
-        float: right;
-        width: 60%;
-        padding: 10px 20px; }
-        .courses .body-lg .body-sm .rate-deatils .right .top .stars .checked {
-          color: orange; }
-        .courses .body-lg .body-sm .rate-deatils .right .prog .progress {
-          margin-bottom: 20px;
-          background-color: rgba(52, 128, 227, 0.1); }
-    .courses .body-lg .body-sm h3 {
-      min-width: 100%;
-      margin-bottom: 30px; }
-    .courses .body-lg .body-sm p {
-      color: #777;
-      margin-bottom: 15px;
-      font-size: 15px; }
-    .courses .body-lg .body-sm .cour-content {
-      background: rgba(52, 128, 227, 0.1);
-      border-radius: 5px;
-      margin: 10px 0;
-      overflow: auto;
-      padding: 10px 15px; }
-      .courses .body-lg .body-sm .cour-content .det {
-        float: right; }
-        .courses .body-lg .body-sm .cour-content .det img {
+    .courses .instrctor p {
+      color: #777; }
+  .courses .intro {
+    border-radius: 5px;
+    box-shadow: 0 0 25px 0 rgba(204, 204, 204, 0.5);
+    padding: 0;
+    margin: 40px 0;
+    overflow: hidden; }
+    .courses .intro img {
+      width: 30%;
+      float: right;
+      border-top-right-radius: 5px;
+      border-bottom-right-radius: 5px;
+      height: 200px; }
+    .courses .intro .cont {
+      float: left;
+      width: 70%;
+      padding: 15px 20px 0 20px; }
+      .courses .intro .cont .head {
+        width: 100%;
+        overflow: hidden; }
+        .courses .intro .cont .head h6 {
           float: right; }
-        .courses .body-lg .body-sm .cour-content .det p {
+        .courses .intro .cont .head .star {
+          float: left; }
+          .courses .intro .cont .head .star .stars .checked {
+            color: orange; }
+      .courses .intro .cont .body {
+        color: #777;
+        width: 100%;
+        overflow: hidden; }
+        .courses .intro .cont .body .right {
+          float: right;
+          width: 70%; }
+          .courses .intro .cont .body .right p {
+            font-size: 14px;
+            margin-bottom: 10px;
+            text-align: right; }
+          .courses .intro .cont .body .right a {
+            text-decoration: none;
+            color: #777; }
+        .courses .intro .cont .body .left {
+          width: 30%;
           float: left;
-          color: #3480E3; }
-      .courses .body-lg .body-sm .cour-content .go {
-        float: left; }
+          text-align: center;
+          padding: 5% 0;
+          padding-right: 30px; }
+          .courses .intro .cont .body .left a:hover {
+            text-decoration: none; }
+      .courses .intro .cont .bottom {
+        width: 100%;
+        margin: 10px 0; }
+        .courses .intro .cont .bottom .progress-bar {
+          background-color: #3480E3; }
+  .courses .body-lg {
+    border-radius: 5px;
+    box-shadow: 0 0 25px 0 rgba(204, 204, 204, 0.5);
+    padding: 0;
+    margin: 40px 0;
+    overflow: auto; }
+    .courses .body-lg .head-lg {
+      min-width: 100%;
+      margin-right: -40px;
+      margin-top: -16px; }
+      .courses .body-lg .head-lg ul {
+        min-width: 100%; }
+        .courses .body-lg .head-lg ul li {
+          float: right;
+          font-size: 18px;
+          font-weight: 600;
+          width: 33.3333333333333333%;
+          padding: 25px;
+          cursor: pointer; }
+          .courses .body-lg .head-lg ul li i {
+            margin: 0 15px; }
+          .courses .body-lg .head-lg ul li:hover {
+            border: none;
+            border-bottom: 2px solid #E53167;
+            background: #3480e329; }
+    .courses .body-lg .body-sm {
+      padding: 10px 15px;
+      min-width: 100%; }
+      .courses .body-lg .body-sm .testmoi {
+        width: 100%;
+        margin: 15px 0;
+        text-align: center; }
+        .courses .body-lg .body-sm .testmoi h5 {
+          margin-bottom: 30px; }
+        .courses .body-lg .body-sm .testmoi .stars .checked {
+          color: orange; }
+        .courses .body-lg .body-sm .testmoi .card {
+          margin: 20px 0;
+          background-color: rgba(52, 128, 227, 0.1);
+          border: none;
+          color: #000; }
+          .courses .body-lg .body-sm .testmoi .card .pic img {
+            height: 70px;
+            width: 70px;
+            margin-top: -30px;
+            border-radius: 50%; }
+          .courses .body-lg .body-sm .testmoi .card .bod {
+            margin-top: 25px;
+            margin-bottom: 25px;
+            color: #000; }
+            .courses .body-lg .body-sm .testmoi .card .bod p {
+              font-size: 13px; }
+            .courses .body-lg .body-sm .testmoi .card .bod span {
+              color: #868E96;
+              font-weight: bold; }
+              .courses .body-lg .body-sm .testmoi .card .bod span i {
+                margin-right: 10px;
+                font-size: 14px;
+                font-weight: 100; }
+      .courses .body-lg .body-sm .rate-deatils {
+        width: 100%;
+        overflow: auto; }
+        .courses .body-lg .body-sm .rate-deatils .left {
+          float: left;
+          width: 40%;
+          padding: 10px 20px; }
+          .courses .body-lg .body-sm .rate-deatils .left .b {
+            text-align: center; }
+          .courses .body-lg .body-sm .rate-deatils .left .form-check {
+            float: left;
+            width: 100%;
+            margin-bottom: 20px; }
+            .courses .body-lg .body-sm .rate-deatils .left .form-check .form-check-label {
+              float: left; }
+              .courses .body-lg .body-sm .rate-deatils .left .form-check .form-check-label input[type=checkbox],
+              .courses .body-lg .body-sm .rate-deatils .left .form-check .form-check-label input[type=radio] {
+                margin: 0 0 0 10px; }
+          .courses .body-lg .body-sm .rate-deatils .left .form-group textarea {
+            background-color: #EDEDED; }
+        .courses .body-lg .body-sm .rate-deatils .right {
+          float: right;
+          width: 60%;
+          padding: 10px 20px; }
+          .courses .body-lg .body-sm .rate-deatils .right .top .stars .checked {
+            color: orange; }
+          .courses .body-lg .body-sm .rate-deatils .right .prog .progress {
+            margin-bottom: 20px;
+            background-color: rgba(52, 128, 227, 0.1); }
+      .courses .body-lg .body-sm h3 {
+        min-width: 100%;
+        margin-bottom: 30px; }
+      .courses .body-lg .body-sm p {
+        color: #777;
+        margin-bottom: 15px;
+        font-size: 15px; }
+      .courses .body-lg .body-sm .cour-content {
+        background: rgba(52, 128, 227, 0.1);
+        border-radius: 5px;
+        margin: 10px 0;
+        overflow: auto;
+        padding: 10px 15px; }
+        .courses .body-lg .body-sm .cour-content .det {
+          float: right; }
+          .courses .body-lg .body-sm .cour-content .det img {
+            float: right; }
+          .courses .body-lg .body-sm .cour-content .det p {
+            float: left;
+            color: #3480E3; }
+        .courses .body-lg .body-sm .cour-content .go {
+          float: left;
+          padding: 10px 0; }
+          .courses .body-lg .body-sm .cour-content .go a:hover {
+            text-decoration: none; }
 
 footer {
   background-color: #14243E;

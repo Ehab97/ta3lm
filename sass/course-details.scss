@@ -49,12 +49,15 @@
             @include smooth(.5s);
             cursor: pointer;
             &:hover {
-                background-color: $blue;
+                transition: .3s ease-in-out;
+                background-color: #bf2d59;
+                color: #fff;
             }
         }
         
         //start courses styling
         .courses {
+            margin-top: 90px;
             .details {
                 border-radius: 5px;
                 box-shadow: 0 0 25px 0 rgba(204, 204, 204, 0.5);
@@ -165,6 +168,9 @@
                             text-align: center;
                             padding: 5% 0;
                             padding-right: 30px;
+                            a:hover {
+                                text-decoration: none;
+                            }
                         }
                     }
                     .bottom {
@@ -328,7 +334,10 @@
                         }
                         .go {
                             float: left;
-                            .active {}
+                            padding: 10px 0;
+                            a:hover {
+                                text-decoration: none;
+                            }
                         }
                     }
                 }
