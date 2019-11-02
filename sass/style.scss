@@ -181,6 +181,57 @@ header .content {
     font-weight: 100;
 }
 
+.payment {
+    background: rgba(52, 128, 227, 0.1);
+    padding: 40px 0;
+    color: #fff;
+    text-align: center;
+    h2 {
+        margin: 35px 0 50px 0;
+        color: #000;
+    }
+    .pay {
+        text-align: center;
+        background: #fff;
+        ;
+        margin-bottom: 40px;
+        padding: 10px 20px;
+        border-radius: 10px;
+        box-shadow: 0 0 25px 0 rgba(204, 204, 204, 0.5);
+        .top {
+            display: block;
+            margin-bottom: 30px;
+            text-align: center;
+            span {
+                color: #000;
+                font-weight: 600;
+            }
+        }
+        .center {
+            display: block;
+            margin-bottom: 30px;
+            img {
+                width: 90%;
+                height: 100px;
+            }
+            p {
+                margin: 15px 0;
+                color: #868E96;
+            }
+        }
+        .bottom {
+            margin-bottom: 30px;
+            display: block;
+            a {
+                color: #fff;
+                &:hover {
+                    text-decoration: none;
+                }
+            }
+        }
+    }
+}
+
 .sponsor {
     margin: 30px 0;
     padding: 50px 0;

@@ -114,42 +114,6 @@ header {
     padding: 40px 0;
 }
 
-//footer
-footer {
-    background-color: #14243E;
-    padding: 40px 0;
-    color: #fff;
-    .soical-icon {
-        list-style: none;
-        li {
-            float: left;
-            border-radius: 50%;
-            background: #3480E3;
-            color: #fff;
-            height: 30px;
-            width: 30px;
-            line-height: 2;
-            text-align: center;
-            margin: 0 5px;
-            a {
-                text-decoration: none;
-                color: #fff;
-                i {
-                    &:hover {
-                        cursor: pointer;
-                        @include trans;
-                    }
-                }
-            }
-            &:hover {
-                cursor: pointer;
-                @include trans;
-            }
-        }
-    }
-}
-
-//End footer
 // midai query
 // Large devices (desktops, 992px and up)
 @media (min-width: 992px) {}
@@ -218,3 +182,10 @@ footer {
         margin-top: 30px;
     }
 }
+
+footer {
+    @include footer;
+}
+
+@include footerMedia;
+//End footer
