@@ -83,7 +83,8 @@ header {
                     }
                     label {
                         color: #ddd;
-                        float: right;
+                        // float: right;
+                        text-align: center;
                     }
                     input:checked~label {
                         color: #FFD700;

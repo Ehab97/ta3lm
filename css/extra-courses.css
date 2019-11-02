@@ -50,7 +50,17 @@ body {
 /*nav bar*/
 header .bg-light {
   margin: 0 0 0 0;
-  background-color: #fff !important; }
+  background-color: #fff !important;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 1005;
+  margin-bottom: 90px;
+  box-shadow: 0px 0px 40px rgba(0, 0, 0, 0.1); }
+  header .bg-light .navbar-brand {
+    font-family: 'Tajawal', sans-serif !important;
+    font-weight: 800;
+    font-style: normal; }
 header .pic img {
   margin-top: -5px;
   height: 60px;
@@ -90,7 +100,8 @@ header .intro {
   -webkit-background-size: cover;
   -o-background-size: cover;
   -moz-background-size: cover;
-  background-size: cover; }
+  background-size: cover;
+  height: 300px; }
 header .overlay {
   position: relative;
   background: rgba(52, 128, 227, 0.49);
@@ -103,6 +114,8 @@ header .overlay {
   height: 100%;
   padding: 110px 0;
   color: #fff; }
+  header .overlay .content {
+    margin: 5% auto; }
 header .content {
   background: none; }
 
