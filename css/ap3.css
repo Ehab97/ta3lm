@@ -1,5 +1,6 @@
 @import "https://fonts.googleapis.com/css?family=Cairo";
 @import "https://fonts.googleapis.com/css?family=Cairo|Tajawal";
+@import "https://fonts.googleapis.com/css?family=Tajawal&display=swap";
 body {
   direction: rtl;
   font-family: 'Cairo', 'Tajawal', sans-serif; }
@@ -7,7 +8,6 @@ body {
 @media (min-width: 768px) {
   .l .how-to-use .row:first-child {
     background-color: #3480E3; } }
-
 /*header strat*/
 #return-to-top {
   text-align: center;
@@ -28,7 +28,6 @@ body {
   -moz-transition: all 0.3s ease;
   -ms-transition: all 0.3s ease;
   -o-transition: all 0.3s ease;
-  -webkit-transition: all 0.3s ease;
   transition: all 0.3s ease; }
   #return-to-top:hover {
     background: #3480E3; }
@@ -52,7 +51,6 @@ body {
 header .bg-light {
   margin: 0 0 0 0;
   background-color: #fff !important; }
-
 header .pic img {
   margin-top: -5px;
   height: 60px;
@@ -60,11 +58,9 @@ header .pic img {
   border-radius: 50%;
   cursor: pointer;
   margin-right: 15px; }
-
 header .navbar-light .navbar-nav .nav-link {
   color: #333333 !important;
   margin-right: 20px; }
-
 header .dropdown-menu {
   padding: 0 5px 10px 5px; }
   header .dropdown-menu a {
@@ -76,38 +72,25 @@ header .dropdown-menu {
     header .dropdown-menu a:hover {
       color: #E53167;
       background: #fff; }
-
 header .navbar-light .navbar-nav .nav-link:hover {
   color: #E53167 !important;
-  -webkit-box-shadow: inset 1px 0px 1px 0px #e1e1e1c7;
   box-shadow: inset 1px 0px 1px 0px #e1e1e1c7;
   -webkit-transform: perspective(1px) translateZ(0);
   transform: perspective(1px) translateZ(0);
-  -webkit-box-shadow: 0 0 1px rgba(0, 0, 0, 0);
-  box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+  box-shadow: 0 0 1px transparent;
   -webkit-transition-duration: 0.6s;
-  -o-transition-duration: 0.6s;
   transition-duration: 0.6s;
   -webkit-transition-property: transform;
-  -webkit-transition-property: -webkit-transform;
-  transition-property: -webkit-transform;
-  -o-transition-property: transform;
   transition-property: transform;
-  transition-property: transform, -webkit-transform;
   -webkit-transform: scale(1.1);
-  -ms-transform: scale(1.1);
   transform: scale(1.1);
-  -webkit-transition: all 0.6s ease-in-out;
-  -o-transition: all 0.6s ease-in-out;
   transition: all 0.6s ease-in-out; }
-
 header .intro {
   background: url("../imgaes/bg/header.jpeg") center center no-repeat;
   -webkit-background-size: cover;
   -o-background-size: cover;
   -moz-background-size: cover;
   background-size: cover; }
-
 header .overlay {
   position: relative;
   background: rgba(52, 128, 227, 0.49);
@@ -115,23 +98,18 @@ header .overlay {
   background: -webkit-gradient(linear, bottom right, bottom left, color-stop(0%, rgba(229, 49, 103, 0.53)), color-stop(52.49%, rgba(116, 117, 180, 0.5)), color-stop(100%, rgba(52, 128, 227, 0.49))) !important;
   background: -webkit-linear-gradient(right, rgba(229, 49, 103, 0.53) 0%, rgba(52, 128, 227, 0.49) 100%) !important;
   background: -o-linear-gradient(right, rgba(229, 49, 103, 0.53) 0%, rgba(116, 117, 180, 0.5) 52.49%, rgba(52, 128, 227, 0.49) 100%) !important;
-  background: -webkit-gradient(linear, right top, left top, from(rgba(229, 49, 103, 0.53)), color-stop(52.49%, rgba(116, 117, 180, 0.5)), to(rgba(52, 128, 227, 0.49))) !important;
-  background: -webkit-linear-gradient(right, rgba(229, 49, 103, 0.53) 0%, rgba(116, 117, 180, 0.5) 52.49%, rgba(52, 128, 227, 0.49) 100%) !important;
   background: linear-gradient(to left, rgba(229, 49, 103, 0.53) 0%, rgba(116, 117, 180, 0.5) 52.49%, rgba(52, 128, 227, 0.49) 100%) !important;
   filter: progid:DXImageTransform.Microsoft.gradient(GradientType=0, startColorstr=rgba(229, 49, 103, 0.53), endColorstr=rgba(52, 128, 227, 0.49));
   height: 100%;
   padding: 110px 0;
   color: #fff; }
-
 header .bg-light {
-  -webkit-box-shadow: 0 4px 2px -2px rgba(204, 204, 204, 0.5);
   box-shadow: 0 4px 2px -2px rgba(204, 204, 204, 0.5); }
 
 .active {
   padding: 5px 20px;
   background: #E53167;
   border: 1px solid #fff;
-  -webkit-box-sizing: border-box;
   box-sizing: border-box;
   border-radius: 25px;
   color: #fff;
@@ -164,7 +142,6 @@ header .bg-light {
     padding: 15px;
     font-size: 18px; }
   .add-uints .ui-widget {
-    -webkit-box-shadow: 0 0 25px 0 rgba(204, 204, 204, 0.5);
     box-shadow: 0 0 25px 0 rgba(204, 204, 204, 0.5); }
   .add-uints #accordion h3,
   .add-uints #accordion1 h3,
@@ -308,74 +285,50 @@ footer {
         color: #fff; }
         footer .soical-icon li a i:hover {
           cursor: pointer;
-          -webkit-box-shadow: inset 1px 0px 1px 0px #e1e1e1c7;
           box-shadow: inset 1px 0px 1px 0px #e1e1e1c7;
           -webkit-transform: perspective(1px) translateZ(0);
           transform: perspective(1px) translateZ(0);
-          -webkit-box-shadow: 0 0 1px rgba(0, 0, 0, 0);
-          box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+          box-shadow: 0 0 1px transparent;
           -webkit-transition-duration: 0.6s;
-          -o-transition-duration: 0.6s;
           transition-duration: 0.6s;
           -webkit-transition-property: transform;
-          -webkit-transition-property: -webkit-transform;
-          transition-property: -webkit-transform;
-          -o-transition-property: transform;
           transition-property: transform;
-          transition-property: transform, -webkit-transform;
           -webkit-transform: scale(1.1);
-          -ms-transform: scale(1.1);
           transform: scale(1.1);
-          -webkit-transition: all 0.6s ease-in-out;
-          -o-transition: all 0.6s ease-in-out;
           transition: all 0.6s ease-in-out; }
       footer .soical-icon li:hover {
         cursor: pointer;
-        -webkit-box-shadow: inset 1px 0px 1px 0px #e1e1e1c7;
         box-shadow: inset 1px 0px 1px 0px #e1e1e1c7;
         -webkit-transform: perspective(1px) translateZ(0);
         transform: perspective(1px) translateZ(0);
-        -webkit-box-shadow: 0 0 1px rgba(0, 0, 0, 0);
-        box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+        box-shadow: 0 0 1px transparent;
         -webkit-transition-duration: 0.6s;
-        -o-transition-duration: 0.6s;
         transition-duration: 0.6s;
         -webkit-transition-property: transform;
-        -webkit-transition-property: -webkit-transform;
-        transition-property: -webkit-transform;
-        -o-transition-property: transform;
         transition-property: transform;
-        transition-property: transform, -webkit-transform;
         -webkit-transform: scale(1.1);
-        -ms-transform: scale(1.1);
         transform: scale(1.1);
-        -webkit-transition: all 0.6s ease-in-out;
-        -o-transition: all 0.6s ease-in-out;
         transition: all 0.6s ease-in-out; }
 
 @media (min-width: 1200px) {
   .x {
     page-break-after: 0; } }
-
 @media (min-width: 992px) {
   .x {
     page-break-after: 0; } }
-
 @media (min-width: 768px) and (max-width: 992px) {
   .add-uints #accordion .content ul li button {
     width: 45%; } }
-
 @media (min-width: 576px) {
   .x {
     page-break-after: 0; } }
-
 @media (max-width: 480px) {
   h4 {
     margin: 40px 0;
     text-align: center; }
+
   .add-uints form .form-group {
     width: 50%; } }
-
 @media (max-width: 480px) {
   footer {
     text-align: center; }
@@ -395,3 +348,5 @@ footer {
         margin: 0 10px; }
         footer .soical-icon li i {
           text-align: center; } }
+
+/*# sourceMappingURL=ap3.css.map */

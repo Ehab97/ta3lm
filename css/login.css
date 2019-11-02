@@ -1,5 +1,6 @@
 @import "https://fonts.googleapis.com/css?family=Cairo";
 @import "https://fonts.googleapis.com/css?family=Cairo|Tajawal";
+@import "https://fonts.googleapis.com/css?family=Tajawal&display=swap";
 body {
   direction: rtl;
   font-family: 'Cairo', 'Tajawal', sans-serif; }
@@ -7,13 +8,11 @@ body {
 @media (min-width: 768px) {
   .l .how-to-use .row:first-child {
     background-color: #3480E3; } }
-
 /*header strat*/
 .active {
   padding: 5px 20px;
   background: #E53167;
   border: 1px solid #fff;
-  -webkit-box-sizing: border-box;
   box-sizing: border-box;
   border-radius: 25px;
   color: #fff;
@@ -45,7 +44,6 @@ body {
   -moz-transition: all 0.3s ease;
   -ms-transition: all 0.3s ease;
   -o-transition: all 0.3s ease;
-  -webkit-transition: all 0.3s ease;
   transition: all 0.3s ease; }
   #return-to-top:hover {
     background: #3480E3; }
@@ -79,15 +77,12 @@ body {
     background: -webkit-gradient(linear, bottom right, bottom left, color-stop(0%, rgba(224, 45, 110, 0.7)), color-stop(52.49%, rgba(116, 117, 180, 0.7)), color-stop(100%, rgba(35, 170, 232, 0.7))) !important;
     background: -webkit-linear-gradient(right, rgba(224, 45, 110, 0.7) 0%, rgba(35, 170, 232, 0.7) 100%) !important;
     background: -o-linear-gradient(right, rgba(224, 45, 110, 0.7) 0%, rgba(116, 117, 180, 0.7) 52.49%, rgba(35, 170, 232, 0.7) 100%) !important;
-    background: -webkit-gradient(linear, right top, left top, from(rgba(224, 45, 110, 0.7)), color-stop(52.49%, rgba(116, 117, 180, 0.7)), to(rgba(35, 170, 232, 0.7))) !important;
-    background: -webkit-linear-gradient(right, rgba(224, 45, 110, 0.7) 0%, rgba(116, 117, 180, 0.7) 52.49%, rgba(35, 170, 232, 0.7) 100%) !important;
     background: linear-gradient(to left, rgba(224, 45, 110, 0.7) 0%, rgba(116, 117, 180, 0.7) 52.49%, rgba(35, 170, 232, 0.7) 100%) !important;
     filter: progid:DXImageTransform.Microsoft.gradient(GradientType=0, startColorstr=rgba(224, 45, 110, 0.7), endColorstr=rgba(35, 170, 232, 0.7));
     height: 100%;
     color: #fff; }
     .content .col-md-4 .overlay .child {
       padding: 50% 0; }
-
 .content .col-md-8 {
   background-color: #F0F0F0;
   padding-top: 11%;
@@ -97,7 +92,6 @@ body {
     width: 55%;
     background: #fff;
     border-radius: 5px;
-    -webkit-box-shadow: 0 0 25px 0 rgba(204, 204, 204, 0.5);
     box-shadow: 0 0 25px 0 rgba(204, 204, 204, 0.5);
     padding: 25px 40px;
     margin: 0 auto; }
@@ -183,73 +177,50 @@ footer {
         color: #fff; }
         footer .soical-icon li a i:hover {
           cursor: pointer;
-          -webkit-box-shadow: inset 1px 0px 1px 0px #e1e1e1c7;
           box-shadow: inset 1px 0px 1px 0px #e1e1e1c7;
           -webkit-transform: perspective(1px) translateZ(0);
           transform: perspective(1px) translateZ(0);
-          -webkit-box-shadow: 0 0 1px rgba(0, 0, 0, 0);
-          box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+          box-shadow: 0 0 1px transparent;
           -webkit-transition-duration: 0.6s;
-          -o-transition-duration: 0.6s;
           transition-duration: 0.6s;
           -webkit-transition-property: transform;
-          -webkit-transition-property: -webkit-transform;
-          transition-property: -webkit-transform;
-          -o-transition-property: transform;
           transition-property: transform;
-          transition-property: transform, -webkit-transform;
           -webkit-transform: scale(1.1);
-          -ms-transform: scale(1.1);
           transform: scale(1.1);
-          -webkit-transition: all 0.6s ease-in-out;
-          -o-transition: all 0.6s ease-in-out;
           transition: all 0.6s ease-in-out; }
       footer .soical-icon li:hover {
         cursor: pointer;
-        -webkit-box-shadow: inset 1px 0px 1px 0px #e1e1e1c7;
         box-shadow: inset 1px 0px 1px 0px #e1e1e1c7;
         -webkit-transform: perspective(1px) translateZ(0);
         transform: perspective(1px) translateZ(0);
-        -webkit-box-shadow: 0 0 1px rgba(0, 0, 0, 0);
-        box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+        box-shadow: 0 0 1px transparent;
         -webkit-transition-duration: 0.6s;
-        -o-transition-duration: 0.6s;
         transition-duration: 0.6s;
         -webkit-transition-property: transform;
-        -webkit-transition-property: -webkit-transform;
-        transition-property: -webkit-transform;
-        -o-transition-property: transform;
         transition-property: transform;
-        transition-property: transform, -webkit-transform;
         -webkit-transform: scale(1.1);
-        -ms-transform: scale(1.1);
         transform: scale(1.1);
-        -webkit-transition: all 0.6s ease-in-out;
-        -o-transition: all 0.6s ease-in-out;
         transition: all 0.6s ease-in-out; }
 
 @media (min-width: 1200px) {
   .p0 {
     padding-left: 0;
     padding-right: 0; } }
-
 @media (min-width: 992px) {
   .p0 {
     padding-left: 0;
     padding-right: 0; } }
-
 @media (min-width: 768px) and (max-width: 992px) {
   .col-md-4 {
     padding-right: 0;
     padding-left: 0; }
+
   .content .col-md-8 form {
     width: 80%;
     margin-bottom: 25px; } }
-
 @media (min-width: 576px) {
   .x {
     page-break-after: 0; } }
-
 @media (max-width: 480px) {
   footer {
     text-align: center; }
@@ -261,14 +232,20 @@ footer {
         margin: 0 10px; }
         footer .soical-icon li i {
           text-align: center; }
+
   .content .col-md-8 form {
     width: 95%;
     text-align: center;
     padding: 25px 25px; }
+
   .active {
     position: unset; }
+
   .col-md-4 {
     padding-right: 0;
     padding-left: 0; }
+
   .content .col-md-8 form .reset {
     padding: 0; } }
+
+/*# sourceMappingURL=login.css.map */
